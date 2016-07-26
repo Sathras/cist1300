@@ -42,8 +42,25 @@
           <li role="presentation"><a href="#general">General</a></li>
           <li role="presentation"><a href="#schedule">Schedule</a></li>
           <li role="presentation"><a href="#grading">Grading</a></li>
-          <li role="presentation"><a href="#assignments">Assignments</a></li>
-          <li role="presentation"><a href="#tutorials">Tutorials</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+            role="button" aria-haspopup="true" aria-expanded="false">Assignments <span class="caret"></span></a>
+            <ul id='dropdownAssignments' class="dropdown-menu">
+              <li><a href="#survey1">Survey 1</a></li>
+              <li><a href="#cloud9">Setting up Cloud9</a></li>
+              <li><a href="#codeacademy">Setting up CodeAcademy</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#tutorials">Tutorials</a></li>
+              <li><a href="#quizzes">Quizzes</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#proposal">Project Proposal</a></li>
+              <li><a href="#project1">Project 1</a></li>
+              <li><a href="#projct2">Project 2</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#survey2">Survey 2</a></li>
+              <li><a href="#evaluation">Course Evaluation</a></li>
+            </ul>
+          </li>
           <li role="presentation"><a href="#rules">Rules</a></li>
           <li role="presentation"><a href="#specialTopics">Special Topics</a></li>
           <li role="presentation"><a href="#instructor">Instructor</a></li>
@@ -112,9 +129,9 @@
             <tr>
               <td>Overview</td>
               <td>
-                In this class, we will cover creating static web pages using HTML5 (HyperText Markup Language),
-                applying styles and formatting to those pages using CSS (Cascading Style Sheets), and learning a powerful
-                programming language (JavaScript) and a popular JS-library (JQuery). We will further learn how tho combine
+                In this class, we will learn how to create static web pages using HTML5 (HyperText Markup Language),
+                applying styles and formatting using CSS (Cascading Style Sheets), and learn a powerful contemporary
+                programming language (JavaScript), as well as a popular JS-library (JQuery). We will further learn how tho combine
                 all three languages to create interactive, mobile-friendly client-side web pages and how to make use of a
                 styling and functionality library (Bootstrap).
               </td>
@@ -144,7 +161,8 @@
         </table>
 
         <h3>Updates in the Syllabus</h3>
-        <p>If the syllabus has to be updated during the semester, major changes will be listed in this section.</p>
+        <p>If the syllabus has to be updated during the semester, major changes will be listed in this section and an announcement
+        will be send out via Blackboard / email.</p>
 
         <h2 id='schedule'>Schedule</h2>
         <table class="table table-striped table-condensed">
@@ -155,7 +173,7 @@
               <th>Topic</th>
               <th>Assignments Due (*)</th>
               <th data-toggle="tooltip" data-placement="top" title="Reachable Score (without attendance)">Score</th>
-              <th data-toggle="tooltip" data-placement="top" title="Maximum, cummulated, reachable score to date">Score Total</th>
+              <th data-toggle="tooltip" data-placement="top" title="Maximum, cummulated, reachable score to date">Score Cummulated</th>
             </tr>
           </thead>
           <tbody>
@@ -696,7 +714,7 @@
       <section id='assignments'>
         <h2>Assignments</h2>
 
-        <h3>Survey : Where we start...</h3>
+        <h3 id='survey1'>Survey : Where we start...</h3>
         <p>Please complete the survey before our next class!</p>
         <p style='font-weight:bold;'>
             <span style='color:#AD0000'>Submission Deadline:</span> 08/24 9:00 AM<br>
@@ -707,7 +725,7 @@
         <span class='text-danger'>This link will be made available during the first class.</span>
 
 
-        <h3>Setting up Cloud 9</h3>
+        <h3 id='cloud9'>Setting up Cloud 9</h3>
         <p style='font-weight:bold;'>
             <span style='color:#AD0000'>Submission Deadline:</span> 08/24 9:00 AM<br>
             <span style='color:#1700AD'>Maximum Score:</span> 10<br>
@@ -755,11 +773,11 @@
           will be able to share the instructors screen during classes which is tremendously helpful
           to follow code examples.</p>
           <p><strong>Don't let me EVER catch you sharing your private workspace with a fellow student.</strong><br>
-          This will be treated as plagiarims and remember, I can access the workspace at any time -
+          This may be treated as plagiarims and remember, I can access the workspace at any time -
           including a history of people who joined / left the workspace.</p>
         </div>
 
-        <h3>Setting up Code Academy Account</h3>
+        <h3 id='codeacademy'>Setting up Code Academy Account</h3>
         <p style='font-weight:bold;'>
             <span style='color:#AD0000'>Submission Deadline:</span> 08/29 9:00 AM<br>
             <span style='color:#1700AD'>Maximum Score:</span> 10<br>
@@ -775,8 +793,9 @@
           <a href='https://www.codecademy.com/register' target='_blank'>signing up</a> at CodeAcademy.
           Please use:
           <ul>
-            <li><strong>Email</strong> - your @unomaha.edu email address. (In case a student already has an account (with a different email),
-          a new account has to be created and used for class)</li>
+            <li><strong>Email</strong> - your @unomaha.edu email address.
+              (In case a student already has an account with a different email,
+              a new account has to be created and used for class)</li>
             <li><strong>Username</strong> - the same  <i>username</i>, you used for signing up at Cloud9 (if possible)</li>
             <li><strong>Password - choose a password you don't use anywhere else (instructor will have access to it!</strong></li>
           </ul>
@@ -788,45 +807,16 @@
         </div>
 
         <div class="alert alert-danger" role="alert">
-          <p><strong>Important:</strong> When doing the tutorial, always make sure you are logged in,
+          <p><strong>Important:</strong> When doing a tutorial, always make sure you are logged in,
           otherwise the progress doesn't gets accredited to your account and you have to do the tutorial again...</p>
         </div>
 
-        <h3>Project Proposal</h3>
-        <p>No information provided yet.</p>
-
-        <h3>Project 1 (HTML & CSS)</h3>
-        <p>No information provided yet.</p>
-
-        <h3>Project 2 (jQuery & Bootstrap)</h3>
-        <p>No information provided yet.</p>
-
-        <h3>Survey : Where we end...</h3>
-        <p>There will be a second survey shortly before the class finishes.</p>
-        <p>Please complete the survey before our last class!</p>
+        <h3 id='tutorials'>Tutorials</h3>
         <p style='font-weight:bold;'>
-            <span style='color:#AD0000'>Submission Deadline:</span> 11/30 9:00 AM<br>
-            <span style='color:#1700AD'>Maximum Score:</span> 10<br>
-            Submission via: <span style='font-weight:normal;'>Survey Link</span>
+            <span style='color:#AD0000'>Submission Deadline:</span> see schedule<br>
+            <span style='color:#1700AD'>Maximum Score:</span> 16 per unit where there are 2 tutorials, 8 per unit where there is one tutorial<br>
+            Submission via: <span style='font-weight:normal;'>CodeAcademy</span>
         </p>
-        <a class='btn btn-primary' disabled>Survey 2</a>
-        <span class='text-danger'>This link is not yet available.</span>
-
-
-        <h3>Course Evaluation</h3>
-        <p>Course Evaluation is extremely helpful and important for the college
-        and the instructor. This helps to improve the material and sessions for
-        future classes. To recieve 10 points for completing the course evaluation,
-        please send a screenshot from your mavlink indicating you have completed the evalation for this course.
-        Your NU-ID or username must be visible in the screenshot.<br>
-        Example Screenshot: not provided yet</p>
-
-        <div class="alert alert-warning" role="alert"><strong>Warning!</strong> Please don't send
-        send a screenshot while you are still filling out the evaluation. This should remain anonymous!</div>
-      </section>
-
-      <section id='tutorials'>
-        <h2>Tutorials</h2>
         <div class="alert alert-warning" role="alert">
           <p>
             <strong>Warning:</strong>
@@ -974,7 +964,100 @@
             </div>
           </div>
         </div>
+
+        <h3 id='quizzes'>Quizzes</h3>
+        <p style='font-weight:bold;'>
+            <span style='color:#AD0000'>Submission Deadline:</span> see schedule<br>
+            <span style='color:#1700AD'>Maximum Score:</span> 40 (each quiz) * 5 (# of quizzes) = 200<br>
+            Submission via: <span style='font-weight:normal;'>Blackboard</span>
+        </p>
+        <p>Quizzes are intended to test the students ability to comprehend the information and programming skills learned.
+        Quizzes are made available in-class at the specified date (usually at the end of the lecture).</p>
+        <ul>
+          <li><strong>Duration:</strong> 15 minutes</li>
+          <li><strong>Type:</strong> Multiple-choice (4-5 answers, one is correct)</li>
+          <li><strong>Questions:</strong> Each student gets 20 random questions out of a pool of about 70 questions.
+          Each correct answer yields 2 points.</li>
+        </ul>
+
+        <h3 id='proposal'>Project Proposal</h3>
+        <p style='font-weight:bold;'>
+            <span style='color:#AD0000'>Submission Deadline:</span> 09/21 9:00 AM<br>
+            <span style='color:#1700AD'>Maximum Score:</span> 50<br>
+            Submission via: <span style='font-weight:normal;'>Blackboard</span>
+        </p>
+        <p>The students have to write a two-page proposal about a website they are intending
+        to develop during the course.</p>
+        <ul>
+          <li>Students will be provided a word template which they <strong>must use</strong> for their submission.</li>
+          <li>There will also be a list of sample ideas provided to the students which can help in finding a good topic.</li>
+        </ul>
+
+        <table class='table table-condensed table-striped'>
+          <thead>
+            <tr>
+              <th>Grading Rubric</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Template (guidelines followed)</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Idea (creativity and uniqueness)</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Description (level of detail and quality)</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Relevance (can all elements required in project 1 and 2 be implemented)</td>
+              <td>10</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <div class="alert alert-info" role="alert">
+          <p><strong>Idea:</strong> It is probably helpful to look at the grading rubric for Project 1 and 2 to see if
+          the intended project actually includes all elements, that are required to reach full score.</p>
+        </div>
+
+        <h3 id='project1'>Project 1 (HTML & CSS)</h3>
+        <p>No information provided yet.</p>
+
+        <h3 id='project2'>Project 2 (jQuery & Bootstrap)</h3>
+        <p>No information provided yet.</p>
+
+        <h3 id='survey2'>Survey : Where we end...</h3>
+        <p>There will be a second survey shortly before the class finishes.</p>
+        <p>Please complete the survey before our last class!</p>
+        <p style='font-weight:bold;'>
+            <span style='color:#AD0000'>Submission Deadline:</span> 11/30 9:00 AM<br>
+            <span style='color:#1700AD'>Maximum Score:</span> 10<br>
+            Submission via: <span style='font-weight:normal;'>Survey Link</span>
+        </p>
+        <a class='btn btn-primary' disabled>Survey 2</a>
+        <span class='text-danger'>This link is not yet available.</span>
+
+
+        <h3 id='evaluation'>Course Evaluation</h3>
+        <p>Course Evaluation is extremely helpful and important for the college
+        and the instructor. This helps to improve the material and sessions for
+        future classes. To recieve 10 points for completing the course evaluation,
+        please send a screenshot from your mavlink indicating you have completed the evalation for this course.
+        Your NU-ID or username must be visible in the screenshot.<br>
+        Example Screenshot: not provided yet</p>
+
+        <div class="alert alert-warning" role="alert"><strong>Warning!</strong> Please don't send
+        send a screenshot while you are still filling out the evaluation. This should remain anonymous!</div>
       </section>
+
+
+
         <h2 id='rules'>Rules</h2>
         <div class="alert alert-info" role="alert">
           <strong>Attention!</strong> By takeing this class, the student agrees to the following rules / policies.<br>
