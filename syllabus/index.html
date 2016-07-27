@@ -61,9 +61,18 @@
               <li><a href="#evaluation">Course Evaluation</a></li>
             </ul>
           </li>
-          <li role="presentation"><a href="#rules">Rules</a></li>
-          <li role="presentation"><a href="#specialTopics">Special Topics</a></li>
-          <li role="presentation"><a href="#instructor">Instructor</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+            role="button" aria-haspopup="true" aria-expanded="false">Other <span class="caret"></span></a>
+            <ul id='dropdownAssignments' class="dropdown-menu">
+              <li><a href="#rules">Rules</a></li>
+              <li><a href="#plagiarism">Plagiarism</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#specialTopics">Special Topics</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#instructor">Instructor</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -1119,7 +1128,7 @@
           </li>
         </ul>
 
-        <h3>Plagiarism</h3>
+        <h3 id='plagiarism'>Plagiarism</h3>
         <ul>
           <li>
             Any homework, program, quiz or exam received which looks identical, in part or in whole,
@@ -1184,7 +1193,9 @@
         </ol>
 
         <h2 id='specialTopics'>Special Topics</h2>
-        <p>The students will vote on 2 advanced topics related to web development for the last two sessions. </p>
+        <p>The students will vote on 2 advanced topics related to web development for the last two sessions.
+        In case some previous sections are unfinished (e.g. due to cancelation of a class), this sessions may serve as a buffer,
+        and will be used to compensate for the lost time.</p>
         <ul>
           <li><strong>GitHub</strong> - Code Collaboration and Versioning</li>
           <li><strong>CMS & Wordpress</strong> - How to build quick websites with limited skills</li>
@@ -1195,15 +1206,13 @@
         </ul>
         <div class="alert alert-info" role="alert">
           <strong>Voting Process:</strong> Each student has 3 points that he/she can distribute to the 6 topics.
-          The two topics with the most points will be chosen.
+          The two topics with the most points will be chosen. The voting will happen on <strong>Mo, 11/21 in class</strong>.
         </div>
 
         <h2 id='instructor'>Instructor</h2>
         <div class='well media'>
           <div class="media-left">
-            <img class="media-object" src="img/me.jpg" alt="Picture" height='300' width='215'>
-          </div>
-          <div class="media-right">
+            <img class="media-object pull-right" src="img/me.jpg" alt="Picture" height='209' width='150'>
             <h3>Alexander Fuchsberger<small>, MS. MA.</small></h3>
             <p>
               <a href="mailto:afuchsberger@unomaha.edu">
