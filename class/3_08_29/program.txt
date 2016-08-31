@@ -1,0 +1,13 @@
+Slides
+
+Tools
+    - W3Schools
+    - Packages / Firebug / Chrome Developer Tools
+
+Assignments (in class)
+    - open a word file you created and try to convert it into
+    a HTML page that looks as close as possible to the original document
+
+HTML
+    - title attribute
+    - metatags, title

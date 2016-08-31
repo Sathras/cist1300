@@ -1,0 +1,23 @@
+Slides
+
+HTML
+    - ordered / unordered lists / horizontal lists
+    - comments
+    - more on div / p / span
+        - sidenote depriciated: frames
+    - Basic Styling: font size, color, family, background color
+    - Images: alt attribute
+    - HTML Codes
+
+Assignments (in class)
+    - make a complete webpage with 4 different pages, connected via
+    a menu (same menu on each page):
+        - index.html
+        - page1.html
+        - page2.html
+        - page3.html
+    - separate menu from page content via 2 div blocks!
+    - provide at least a heading and content on each page
+
+Tools
+    - Validator
