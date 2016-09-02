@@ -1,15 +1,29 @@
-Slides
-
 HTML
-    - ordered / unordered lists / horizontal lists
+    - Open Questions from last time:
+        - Images: alt attribute
+        - HTML Codes
+    - links (relative VS absolute)
+    - Assignment 1
+    - horizontal lists
     - comments
     - more on div / p / span
         - sidenote depriciated: frames
     - Basic Styling: font size, color, family, background color
-    - Images: alt attribute
-    - HTML Codes
+    - Assignment 2
+    - Validator
 
-Assignments (in class)
+Assignment 1 (10 min)
+    1. look for a small icon image in the interent and find out the absolute path
+    2. upload the file to your repository
+    3. create a HTML file with 3 links showing the same image:
+        - a absolute link to the original file
+        - a relative link to the file on your server
+        - a absolute link to the file on your server
+
+        ensure the image and the html file are not in the same directory
+        usually web developers put all image files in a folder "img"
+
+Assignment 2 (20 min)
     - make a complete webpage with 4 different pages, connected via
     a menu (same menu on each page):
         - index.html
