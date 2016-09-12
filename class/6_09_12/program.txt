@@ -1,0 +1,16 @@
+CSS
+ - box parameters
+ - border radius
+ - colors: name, hex, rgb, alpha channel
+ - position: absolut vs relative vs static vs fixed
+ - units: %, em, px,
+ - individual targeting (corners, edges)
+ - |cascading| style sheets
+
+Tools
+ - Colorzilla & Gradients
+
+Assignment
+ - Try to style your menu like this:
+    http://www.thedesignwork.com/wp-content/uploads/2011/07/Best-Menu-Designs-Template-29.jpg
+

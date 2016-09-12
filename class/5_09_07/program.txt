@@ -1,0 +1,53 @@
+HTML
+    - HTML Codes
+    - horizontal lists
+    - tables
+    - div (margin, padding, width, height)
+    - style attribute vs .css file
+
+Assignment 1 - organize your repository
+    - create a folder "class"
+    - inside folder class create a subfolder for each lecture "e.g. 1_HTML" (1 means the class number in the syllabus)
+    - create a subfolder for each in-class coding assignment so you (and i) will know exactly where you are
+
+Assignment 2 - Part 1
+
+    - copy the code you created for the 4 page website from last time
+        if you don't have this code anymore then you can copy the files from my
+        repository (everything under class/4_08_31/assignment2)
+
+    - Put the menu into a <div> and the rest of the page content (heading) into
+        another div
+
+    - turn the menu into a stylish vertical menu using background color, new fonts
+        and bold / italic. Style it in a way you like it.
+
+    - make sure the div (menu) has a height of 20 px. each menu item should span 25% of the screen.
+
+    - Retitle and adjust all proper elements (title, heading, menu items):
+        - Home: Description of your page
+        - page1: Blog
+        - page2: Foto Gallery
+        - page3: Contact information
+
+        Ensure you don't change the menulinks(src) or rename the files!
+
+Assignment 2 - Part 2
+
+    - create a picture gallery on page2
+        - use a table and image of equal size, (use google search - advanced
+          searchtools to specify to look only for images with a certain height and width)
+        - have at least 12 images
+
+    - create a nice table with your real or fake contact information on page 3
+        - style it not colorful but rather professional:
+            e.g.: https://www.ets.org/gre/contact#general_inquiries
+
+    - create a nice blog (use a table) on page 1
+        - add at least 3 entries where each entry should contain:
+            - Date, Author and Topic of the Blog entry.
+            - A textarea with the entry. Don't think about real text, just copy
+            random text into paragraphs (see here: http://www.loremipsum.de/)
+
+    - also create a description on the home page what this page is about and what
+        you will find (use paragraphs and a list)
