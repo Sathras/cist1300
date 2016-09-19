@@ -19,5 +19,3 @@ Assignment 3
 Assignment 4
  - Create a round button (circle) that has a diffent text and color when
     hovering over it with the mouse
-
-
