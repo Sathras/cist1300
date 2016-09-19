@@ -2,8 +2,6 @@ CSS
  - background image
  - colors: name, hex, rgb, alpha channel
  - img vs png vs gif
- - id's, classes and hierarchy
-
  - shadow
  - gradients
 

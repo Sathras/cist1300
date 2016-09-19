@@ -1,0 +1,23 @@
+CSS
+ - <meta charset="UTF-8">
+ - id's, classes and hierarchy
+ - image type: svg
+ - pseudo elements
+
+Assignment 1
+ - give the page a repeating background image and then create a div that is 50%
+ transparent, so you can still see the background. Ensure the text inside the div
+ is not also transparent
+
+Assignment 2
+ - Create a hyperlink and style them differently depending wheter they were
+   visited, not visited, active, or moused-over
+
+Assignment 3
+ - Create a Table that has uneven rows styled differently than even rows
+
+Assignment 4
+ - Create a round button (circle) that has a diffent text and color when
+    hovering over it with the mouse
+
+
