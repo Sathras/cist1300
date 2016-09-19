@@ -1,7 +1,6 @@
 CSS
  - box parameters
  - border radius
- - colors: name, hex, rgb, alpha channel
  - position: absolut vs relative vs static vs fixed
  - units: %, em, px,
  - individual targeting (corners, edges)

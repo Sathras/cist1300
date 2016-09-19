@@ -1,0 +1,70 @@
+body {
+    padding-top:70px;
+    margin:0;
+    background: rgb(72, 98, 163, 0.3) url("../img/index.jpg") repeat-y center center;
+    opacity: 1;
+}
+
+div {
+    margin:0;
+    height:70px;
+    background-color:#1F1F1F;
+    border-bottom:10px solid #6DC0E2;
+    position:fixed;
+    left:0;
+    top:0px;
+    width:100%;
+}
+
+
+ul {
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+li
+{
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    background-color:#6DC0E2;
+    padding:10px;
+    /*You can specifiy each corner separatedly if you wish: */
+    border-radius: 10px 10px 0px 0px;
+    /* top left, top right, bottom right, bottom left */
+
+
+}
+
+button {
+    width: 300px;
+    height: 100px;
+    font-size: 50px;
+    background-color:#CCC;
+    color:#FFF;
+
+    /* Variant 1 - Style Borders independently*/
+    border-left: 40px solid #000;
+    border-right: 40px solid #000;
+
+    /* Variant 2 - Style them together*/
+    border-color:#000000;
+    border-style: solid;
+    /*border-width: 0px 40px 0px 40px;*/
+    border-width: 0 40px; /* short form (top and bottom together, right and left together */
+
+
+    -webkit-box-shadow: 24px 10px 146px 9px rgba(217,63,217,1);
+    -moz-box-shadow: 24px 10px 146px 9px rgba(217,63,217,1);
+    box-shadow: 24px 10px 146px 9px rgba(217,63,217,1);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#febbbb+0,ff5c5c+75 */
+    background: #febbbb; /* Old browsers */
+    background: -moz-linear-gradient(top,  #febbbb 0%, #ff5c5c 75%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #febbbb 0%,#ff5c5c 75%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #febbbb 0%,#ff5c5c 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=0 ); /* IE6-9 */
+
+}

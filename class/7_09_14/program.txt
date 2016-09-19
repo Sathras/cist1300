@@ -1,0 +1,14 @@
+CSS
+ - background image
+ - colors: name, hex, rgb, alpha channel
+ - img vs png vs gif
+ - id's, classes and hierarchy
+
+ - shadow
+ - gradients
+
+Assignment
+ - Add a highlighted active tab to menu from last time (copy assignment before)
+
+
+https://upload.wikimedia.org/wikipedia/commons/4/43/The_Earth_seen_from_Apollo_17_with_transparent_background.png
