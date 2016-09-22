@@ -2,7 +2,6 @@ body {
     padding-top:70px;
     margin:0;
     background: rgb(72, 98, 163, 0.3) url("../img/index.jpg") repeat-y center center;
-    opacity: 1;
 }
 
 div {
@@ -35,7 +34,6 @@ li
     /*You can specifiy each corner separatedly if you wish: */
     border-radius: 10px 10px 0px 0px;
     /* top left, top right, bottom right, bottom left */
-
 
 }
 

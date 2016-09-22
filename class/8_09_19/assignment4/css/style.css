@@ -1,0 +1,8 @@
+button { width:300px; height:300px; border-radius:150px; background-color:gray;}
+button:hover {background-color:green; }
+
+span { display: none; font-size:80px;}
+span:nth-child(1) { display: block; }
+
+button:hover span:nth-child(1) { display: none; }
+button:hover span:nth-child(2) { display: block; }

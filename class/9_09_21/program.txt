@@ -1,0 +1,14 @@
+HTML
+ - Forms
+ - onclick
+
+JavaScript
+ - variables, calculations, console.log, if/else
+ - && and || operators
+ - functions
+ - How to read forms
+
+Assignment
+ - complete the calculator developed by the instructor with functions to
+    subtract, multiply and divide two numbers. Adding two numbers is already
+    implemented
