@@ -1,0 +1,8 @@
+JavaScript
+ - code structure and style
+    - execution of a single command without {}
+    - short form for if/else : (condition) ? <if> : <else> ;
+
+ - assignment
+    - improve make rock / paper / scissors better
+        - make use of new commands (see functions.js)
