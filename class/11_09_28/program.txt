@@ -1,0 +1,19 @@
+JavaScript
+ - for loops
+ - arrays
+ - objects (basics)
+ - arrays VS objects
+
+Assignment
+ 1. Write a program, that generates 15 random numbers
+    from 0 to 99 and stores them in an array
+ 2. Extend the program, so that it sorts all numbers
+    in ascending order
+        - don't use array.sort() or any preprogrammed functions
+        - only use for loops (no while)
+ 4. Extend the program, so that it displays min,
+    max and average
+ 3. Extend the program and calculate the median
+ 4. Extend the program and calculate the mode
+ 5. Put all the values you calculated into the proper
+    elements of the HTML file using JS
