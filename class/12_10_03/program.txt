@@ -1,0 +1,16 @@
+JS
+ - how to understand and analyze existing code
+ - canvas basics
+ - JS: timeout (), setInterval()
+ - JQery Basics
+ - Snake Game
+
+Assignment
+ - display (outside of the game canvas) the maximum score ever reached
+   since this page was opened
+
+ - expand Snake Game by adding 3 4x4 rocks into the area
+        - rocks should have a minimum distance of 3 from each border
+        - snakes  die if they hit a rocks
+        - food can never be placed on a rock
+        - rocks don't reset when game resets
