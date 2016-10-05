@@ -1,0 +1,16 @@
+Tick Tack Toe
+ - create a playable tick tack toe (for 2 players)
+    - HTML entity for X &#10060; (make red)
+    - HTML entity for O &#9711; (make blue)
+    - should include a score, whenever someone wins,
+      resets the game and scores +1 for the player
+    - should include error checking
+        - can't set a field that is already set
+    - show who's player's turn it is
+        - in the first round determine randomly who
+          starts the game
+        - when game resets change the starting player
+
+ - Bonus:
+    - create an AI (artificial intelligence) that you
+    can play against in the lack of other players

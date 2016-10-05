@@ -1,0 +1,7 @@
+jQuery
+ - Animations
+
+Assignment 1
+ - generate a click me button that moves away from the
+   mouse, whenever you get close to it.
+    - make sure it always stays on the visible screen

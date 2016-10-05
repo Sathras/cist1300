@@ -13,6 +13,7 @@ $(document).ready(function(){
 	var cw = 10;
 	var d;
 	var food;
+	var rocks = [];
 	var score;
 
 	//Lets create the snake now
@@ -31,6 +32,8 @@ $(document).ready(function(){
 		if(typeof game_loop != "undefined") clearInterval(game_loop);
 		game_loop = setInterval(paint, 60);
 	}
+
+	create_rock(3);
 	init();
 
 	function create_snake()
@@ -55,6 +58,15 @@ $(document).ready(function(){
 		//Because there are 45(450/10) positions accross the rows and columns
 	}
 
+	function create_rock(count){
+		for(var i = 0; i<count; i++){
+			rocks.push({
+				x: Math.round(Math.random()*(w-cw)/cw),
+				y: Math.round(Math.random()*(h-cw)/cw),
+			});
+		}
+	}
+
 	//Lets paint the snake now
 	function paint()
 	{
@@ -64,6 +76,10 @@ $(document).ready(function(){
 		ctx.fillRect(0, 0, w, h);
 		ctx.strokeStyle = "black";
 		ctx.strokeRect(0, 0, w, h);
+
+		for (var i = 0; i < rocks.length; i++) {
+			paint_rock(rocks[i].x, rocks[i].y);
+		}
 
 		//The movement code for the snake to come here.
 		//The logic is simple
@@ -88,6 +104,15 @@ $(document).ready(function(){
 			init();
 			//Lets organize the code a bit now.
 			return;
+		}
+
+		for (var i = 0; i < rocks.length; i++) {
+			if(nx == rocks[i].x && ny == rocks[i].y){
+				//restart game
+				init();
+				//Lets organize the code a bit now.
+				return;
+			}
 		}
 
 		//Lets write the code to make the snake eat the food
@@ -132,6 +157,16 @@ $(document).ready(function(){
 		ctx.strokeStyle = "white";
 		ctx.strokeRect(x*cw, y*cw, cw, cw);
 	}
+
+	//Lets first create a generic function to paint cells
+	function paint_rock(x, y)
+	{
+		ctx.fillStyle = "gray";
+		ctx.fillRect(x*cw, y*cw, cw, cw);
+		ctx.strokeStyle = "white";
+		ctx.strokeRect(x*cw, y*cw, cw, cw);
+	}
+
 
 	function check_collision(x, y, array)
 	{
