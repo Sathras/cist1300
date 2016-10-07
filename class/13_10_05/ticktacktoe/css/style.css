@@ -1,0 +1,38 @@
+.board, .control {
+    width:600px;
+    text-align:center;
+}
+
+.field {
+    width: 200px;
+    height:200px;
+    float:left;
+    font-size: 146px;
+    text-align:center;
+    cursor:pointer;
+}
+
+.field:nth-child(odd){
+    background-color:#a8ffdd;
+}
+
+.p1:before {
+    content : "";
+}
+
+span {
+    font-size: 30px;
+    font-weight: bold;
+}
+span:first-of-type {
+    color: blue;
+    float:left;
+}
+span:last-of-type {
+    color: red;
+    float:right;
+}
+
+span.active {
+    text-decoration:underline;
+}
