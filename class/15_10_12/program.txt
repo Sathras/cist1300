@@ -1,0 +1,14 @@
+Topic: Graphical User Interfaces
+
+CSS:
+ - Designing a GUI
+ - Styling with Gradients (linear and radial)
+ - Templates: Menu example with mouseover change color
+ - How to use your own fonts
+ - how to make a gradient heading (two colors)
+ - CSS Grid Background (login page of same example)
+ - Cut corners
+
+Assignment
+ - Change one of the menu items to a dropdown. Clicking it should  reaveal a submenu
+ - clicking anywhere else should hide the menu again

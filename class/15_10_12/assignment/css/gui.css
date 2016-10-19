@@ -1,0 +1,245 @@
+/*!
+ * This is a custom template for Bootstrap and has to be used in addition
+ * to the original Bootstrap CSS (version 3.3.7)
+ */
+
+/* Custom Fonts */
+@font-face {
+  font-family: recharge;
+  src: url(../fonts/recharge.ttf);
+}
+
+body {
+  font-family: Recharge, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#E5E5E5;
+  background:#091932 url("../images/ui/nebula.jpg");
+  padding: 70px 0;
+}
+
+.navbar {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
+  border:0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.navbar-brand {
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#ff5959, #ffba1e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Text Modifications */
+.text-last-center { text-align-last: center; }
+
+.alert-error { color: #ff8484;}
+
+a:link, a:visited { color:#f0cf62; text-decoration: none; }
+
+/* Position Modifications */
+.pull-right { float: right; display: inline-block; padding: 5px 15px 0 0; }
+
+/* Basic Elements */
+
+
+.gui-content-area {
+  padding:25px;
+  min-width:1024px;
+  max-width:1600px;
+  margin: 0 auto;
+  left:-50%;
+}
+
+.gui-nav {
+  min-width:1024px;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  position:fixed;
+  height: 100px;
+  width:100%;
+}
+
+.gui-bg-grid {
+  background-color: rgba(23, 37, 51, .5);
+  background-image: linear-gradient(0deg, transparent 24%,
+   rgba(28, 42, 62, .5) 25%,
+   rgba(28, 42, 62, .5) 26%,
+   transparent 27%, transparent 74%,
+   rgba(28, 42, 62, .5) 75%,
+   rgba(28, 42, 62, .5) 76%,
+   transparent 77%, transparent),
+   linear-gradient(90deg,
+   transparent 24%,
+   rgba(28, 42, 62, .5) 25%,
+   rgba(28, 42, 62, .5) 26%,
+   transparent 27%, transparent 74%,
+   rgba(28, 42, 62, .5) 75%,
+   rgba(28, 42, 62, .5) 76%,
+   transparent 77%, transparent);
+  background-size:10px 10px;
+}
+
+/* TOP MENU */
+.gui-nav.nav-top {
+  top:0;
+  left: 0;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
+  /*background-image: radial-gradient(circle, #153346 0%, #000 100%);*/
+}
+
+ul.navbar-nav {
+  padding: 10px 0;
+}
+.gui-nav.nav-top li {
+  display:inline;
+  margin-right:10px;
+  padding: 0;
+}
+
+.navbar-brand {
+  padding: 5px 0;
+  margin-right:15px;
+}
+
+ul.navbar-nav > li {
+  margin-right:15px;
+  border-left:10px solid #0096f5;
+  padding-left: 5px;
+}
+
+ul.navbar-nav > li > a {
+  text-transform: uppercase;
+  color: #0096f5 !important;
+  padding: 5px 25px;
+  display: inline-block;
+}
+
+
+
+.corner-tr {
+  background-image:
+  linear-gradient(to bottom left, transparent 50%, #172533 50%),
+  linear-gradient(#172533, #172533),
+  linear-gradient(#f0cf62, #f0cf62);
+  background-size: 15px 15px, 100% 100%, 100% 100%;
+  background-position: 100% 0%, -15px 0%, 100% 15px;
+  background-repeat: no-repeat;
+}
+.corner-tr-filled {
+  background-image:
+  linear-gradient(#0096f5, #0096f5),
+  linear-gradient(#0096f5, #0096f5),
+  linear-gradient(#0096f5, #0096f5),
+  linear-gradient(#0096f5, #0096f5),
+  linear-gradient(to bottom left,
+  transparent calc(50% - 1px),
+  #0096f5 calc(50% - 1px),
+  #0096f5 calc(50% + 1px),
+  #172533 calc(50% + 1px)),
+  linear-gradient(#172533, #172533),
+  linear-gradient(#172533, #172533);
+  background-size: 2px 100%, 2px 100%, 100% 2px, 100% 2px, 15px 15px, 100% 100%, 100% 100%;
+  background-position: 0% 0%, 100% 15px, -15px 0%, 0px 100%, 100% 0%, -15px 0%, 100% 15px;
+}
+
+ul.navbar-nav > li:hover,
+ul.navbar-nav > li.active{
+  border-color: #f0cf62;
+}
+ul.navbar-nav > li > a:hover {
+  background-color: transparent !important;
+}
+ul.navbar-nav > li.active > a {
+  background-color: transparent !important;
+  color: #f0cf62 !important;
+}
+
+ul.navbar-nav > li.active > .corner-tr {
+  background-image:
+  linear-gradient(to bottom left, transparent 50%, #172533 50%),
+  linear-gradient(#172533, #172533),
+  linear-gradient(#f0cf62, #f0cf62) !important;
+}
+
+ul.navbar-nav > li.active > .corner-tr-filled {
+  background-image:
+  linear-gradient(#f0cf62, #f0cf62),
+  linear-gradient(#f0cf62, #f0cf62),
+  linear-gradient(#f0cf62, #f0cf62),
+  linear-gradient(#f0cf62, #f0cf62),
+  linear-gradient(to bottom left,
+  transparent calc(50% - 1px),
+  #f0cf62 calc(50% - 1px),
+  #f0cf62 calc(50% + 1px),
+  #172533 calc(50% + 1px)),
+  linear-gradient(#172533, #172533),
+  linear-gradient(#172533, #172533) !important;
+}
+
+/* Bottom */
+.gui-nav.nav-bottom {
+  left: 0;
+  bottom: 0;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 75, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 75%,rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 75%,rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+}
+#copyright {
+  margin-top:50px;
+  font-size: 80%;
+  color: #898989;
+}
+
+/* Login Form */
+.gui-form-login {
+  margin:auto;
+  padding:25px;
+  width:300px;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.gui-form-login h1 {
+  width:calc(100% - 30px);
+  background-color: #061b27;
+  padding: 5px 15px;
+  border: 2px solid #0096f5;
+  text-align: center;
+}
+
+.gui-form-login input {
+  width:calc(100% - 30px);
+  background-color: #061b27;
+  padding: 5px 15px;
+  border: 2px solid #0096f5;
+  text-align: center;
+}
+.gui-form-login button {
+  margin-top: 20px;
+  background-color: #061b27;
+  padding: 15px;
+  border: 2px solid #0096f5;
+  color: #0096f5;
+}
+
+.gui-content-area { display: none;}
