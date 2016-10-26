@@ -1,0 +1,29 @@
+JS / JQuery
+  - Classes
+  - html data attributes
+
+Assignment
+================================================================================
+Take the chess board example and add the following features:
+ - When clicking on a piece indicate the piece is active
+     - when clicking on an other spot on the board move the activated piece to this spot
+     - when clicking on the same piece instead, make it inactive again
+ - ensure after moving a white piece it is blacks turn and visa verse, do not allow
+   multiple turns from the same color after each other
+ - ensure a piece cannot move onto another piece of the same color
+ - if a piece moves onto a piece of the other color it is assumed this piece is
+   beaten and removed from the game board
+ - white always starts a chess game
+
+ Bonus:
+    - make a validation for each movement, that ensures,
+      a piece can only move to proper places
+    - indicate who's turn it is
+
+--------------------------------------------------------------------------------
+JQUERY Functions you might need:
+$(selector).html()          --> get html content of a specific element
+$(selector).html('text')    --> set html content of a specific element to text
+
+$(selector).data('column')  --> get value of data-column attribute of element
+$(selector).data('column', '1')    --> set value of data-column attribute of element

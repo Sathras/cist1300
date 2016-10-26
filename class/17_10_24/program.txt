@@ -1,5 +1,22 @@
 - Project Discussion
-    - To Dos, what not to do
+    - To Dos, what not to do (uploaded word file under downloads/project/
     - showing of some great works
 
 - JQUERY & HTML FORMS
+    - <form>, <input>
+    - input attributes:
+        type= 'text, password, number, email ...'
+        name= ''
+        id= ''
+        val = ''
+        placeholder = ''
+    - form attributes:
+        action='link' // link to where the form data is sent
+        method='post/get'
+
+    JQUERY get form data
+        - inputdata = $(form #idofinput).val();
+
+    JQUERY set form data
+        - $(form #idofinput).val('new value');
+
