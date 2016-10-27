@@ -16,9 +16,10 @@ Take the chess board example and add the following features:
  - white always starts a chess game
 
  Bonus:
-    - make a validation for each movement, that ensures,
+   - make a validation for each movement, that ensures,
       a piece can only move to proper places
-    - indicate who's turn it is
+   - indicate who's turn it is
+   - when a pawn reaches the oposite last row transform it into a queen
 
 --------------------------------------------------------------------------------
 JQUERY Functions you might need:
