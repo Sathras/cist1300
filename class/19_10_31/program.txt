@@ -1,0 +1,26 @@
+1. Finish and talk about chess game
+2. Canvas-Real-Time game
+    - HTML Canvas element
+    - KeyInput
+    - game loops and frame-rate independence
+
+Web-Tutorial available here:
+http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/
+--------------------------------------------------------------------------------
+
+Assignment
+    - We follow the tutorial step by step and try to understand what is going only
+    - This time try to use absolute links to bind in your images:
+        - Background: https://raw.githubusercontent.com/lostdecade/simple_canvas_game/master/images/background.png
+        - Pumpkin: http://i2.wp.com/www.speedycppshq.com/wp-content/uploads/2016/09/cropped-Halloween_2013_Emoticons_Pumpkin.png?fit=32%2C32
+        - hero1: https://hydra-media.cursecdn.com/dota2.gamepedia.com/2/27/Crystal_Maiden_icon.png
+        - hero2: http://thumb.vpgamecdn.com/file/npc_dota_hero_dragon_knight_sm.png
+
+Bonus
+    - expand the game into a 2 player version, where the other player can use
+    WSAD to control his figure. Have 2 scores displayed, one for each player
+    - there should be always 3 pumpkins to catch (can be catched by anyone)
+    - after 2 minutes stop the game and have the player with a higher score win!
+
+--------------------------------------------------------------------------------
+     ...today concludes the JavaScript/JQuery/ Game Development Sessions...
