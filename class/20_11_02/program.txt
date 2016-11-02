@@ -1,0 +1,7 @@
+Bootstrap
+    - Basics & Introduction
+    - Grid System & Mobile
+
+Assignments
+    - Create a simple, mobile friendly page using the grid system
+    - display different (shortened) content on the mobile page
