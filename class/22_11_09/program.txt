@@ -1,0 +1,32 @@
+Practice Session!
+--------------------------------------------------------------------------------
+In todays folder you will find "example.png".
+Work together with your neighbor in class!
+
+
+Assignment 1:
+ - Create a Bootstrap website which looks exactly like shown in the image file
+ - add a fitting glyphicon in front of the text within the buttons edit and destroy
+
+Assignment 2:
+ - create a mobile version of the page where
+      - you truncate the text in the table (if it is too long)
+      - you only show the glyphicons on buttons
+      - about us is under the table
+
+      - ensure the destop version of the page remains unchanged
+        (except the navigation bar)
+
+
+
+Text for About me:
+--------------------------------------------------------------------------------
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nibh sem,
+egestas quis fringilla id, commodo id magna. Ut et magna sodales, convallis
+libero id, consequat sapien. Vivamus vulputate velit erat, quis suscipit ante
+vulputate a. Nulla nec lectus neque. Praesent varius eu sapien convallis
+aliquam. Duis tempor urna eget nisl mollis dictum. Vivamus condimentum orci
+eget ipsum ornare vestibulum. Aliquam eget fringilla purus. Cras tempus fermentum
+nulla, vitae cursus odio aliquam non. Morbi pellentesque finibus mauris, eu
+facilisis arcu eleifend tincidunt. Nunc ullamcorper tellus maximus, eleifend
+ex ut, dapibus odio.
