@@ -1,0 +1,6 @@
+1. Bootstrap Assignment Instructions
+2. Wordpress
+    - what it is
+    - how it looks
+    - how to set it up
+
