@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class='container'>
+
+            <!-- Feedback Message (hidden by default) -->
+            <div class="alert hidden" role="alert">
+
+                <!-- This creates a button, when clicked, hides the alert message -->
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                <!-- This is where our feedback message will appear (currently empty) -->
+                <p></p>
+            </div>
+
+
+            <!-- CONTACT FORM -->
+            <h3>Contact Form</h3>
+            <!-- novalidate disables default validation since we create our own -->
+            <form novalidate>
+              <div class="form-group">
+                <label for="inpEmail">Email</label>
+                <input type="email" class="form-control" id="inpEmail" placeholder="your email address">
+              </div>
+              <div class="form-group">
+                <label for="inpText">Message</label>
+                <input type="text" class="form-control" id="inpText" placeholder="Please leave a message here">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/scripts.js" type="text/javascript"></script>
+    </body>
+</html>
