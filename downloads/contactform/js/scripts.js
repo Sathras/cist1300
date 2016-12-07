@@ -32,7 +32,7 @@ $('form').submit(function(event){
 
     // remove all validation classes since they are reevaluated in a second
     Alert.removeClass('alert-danger alert-info');
-    $('.form-group').removeClass('has-success has-error');
+    $('.form-group').removeClass('has-error');
 
     // first we check if the text in the email field is actually a valid email address
 
@@ -41,6 +41,7 @@ $('form').submit(function(event){
         error = true;
         feedback = "<strong>Error!</strong>"
         + " You have to fill in an email address!";
+        $('#inpEmail').parent().addClass('has-error');
     }
 
     // With ! in the beginning of the expression we reverse the result since we
@@ -49,6 +50,7 @@ $('form').submit(function(event){
         error = true;
         feedback = "<strong>Error!</strong>"
         + " You have not entered a valid email address!";
+        $('#inpEmail').parent().addClass('has-error');
     }
 
     // we also want to ensure a user enters a text message
@@ -56,6 +58,7 @@ $('form').submit(function(event){
         error = true;
         feedback = "<strong>Error!</strong>"
         + " You have not entered a message!";
+        $('#inpText').parent().addClass('has-error');
     }
 
     // we also want to ensure the message is long enough
@@ -63,6 +66,7 @@ $('form').submit(function(event){
         error = true;
         feedback = "<strong>Error!</strong>"
         + " Your message is too short!";
+        $('#inpText').parent().addClass('has-error');
     }
 
     // after all validation checks have been passed show the updated feedback alert
