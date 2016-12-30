@@ -6,15 +6,6 @@
   <title>CIST 1300 - Syllabus</title>
   <meta name="author" content="Alexander Fuchsberger">
 
-<!-- TODO
-  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    Replace Tutorial Links and Descriptions
-    Update Cloud9 Assignment based on Teaching Account
-    Update Submission Deadlines on Assignment instructions
-    Prepare Individual Class Notes in cloud9 public repository
-
- -->
-
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -42,7 +33,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">CIST 1300 (Spring 2017)</a>
+        <a class="navbar-brand" href="#">CIST 1300 (Fall 2016)</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -55,19 +46,24 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"
             role="button" aria-haspopup="true" aria-expanded="false">Assignments <span class="caret"></span></a>
             <ul id='dropdownAssignments' class="dropdown-menu">
-              <li><a href="#tutorials">Tutorials</a></li>
-              <li role="separator" class="divider"></li>
+              <li><a href="#survey1">Survey 1</a></li>
               <li><a href="#cloud9">Setting up Cloud9</a></li>
               <li><a href="#codeacademy">Setting up CodeAcademy</a></li>
-              <li><a href="#website-readme">Website - ReadMe</a></li>
-              <li><a href="#website-hc">Website - HTML/CSS Solution</a></li>
-              <li><a href="#website-bt">Website - Bootstrap Solution</a></li>
-              <li><a href="#website-wp">Website - Wordpress Solution</a></li>
-              <li><a href="#js-agmt">JavaScript/jQuery - Assignment</a></li>
-              <li><a href="#js-game">JavaScript/jQuery - Game</a></li>
-              <li><a href="#survey">Survey</a></li>
+
               <li role="separator" class="divider"></li>
+              <li><a href="#tutorials">Tutorials</a></li>
               <li><a href="#quizzes">Quizzes</a></li>
+              <li><a href="#game">Develop a Game</a></li>
+              <li><a href="#assignment_bootstrap">Bootstrap Assignment</a></li>
+
+              <li role="separator" class="divider"></li>
+              <li><a href="#proposal">Project Proposal</a></li>
+              <li><a href="#project1">Project 1</a></li>
+              <li><a href="#project2">Project 2</a></li>
+
+              <li role="separator" class="divider"></li>
+              <li><a href="#survey2">Survey 2</a></li>
+              <li><a href="#evaluation">Course Evaluation</a></li>
             </ul>
           </li>
           <li class="dropdown">
@@ -76,7 +72,10 @@
             <ul id='dropdownAssignments' class="dropdown-menu">
               <li><a href="#rules">Rules</a></li>
               <li><a href="#plagiarism">Plagiarism</a></li>
+              <li role="separator" class="divider"></li>
               <li><a href="#systems">Systems</a></li>
+              <li><a href="#specialTopics">Special Topics</a></li>
+              <li role="separator" class="divider"></li>
               <li><a href="#instructor">Instructor</a></li>
             </ul>
           </li>
@@ -98,8 +97,8 @@
     <div class="row">
       <div class="col-md-12">
         <h1>
-          CIST 1300-002 Course Syllabus<br>
-          <small>Introduction to Web Development, Spring 2017</small>
+          CIST 1300-001 Course Syllabus<br>
+          <small>Introduction to Web Development, Fall 2016</small>
         </h1>
         <table class="table table-striped table-condensed table-firstbold">
           <thead>
@@ -110,11 +109,11 @@
           <tbody>
             <tr>
               <td>Time</td>
-              <td>Tuesdays and Thursdays 12:00 PM - 1:15 PM</td>
+              <td>Monday, Wednesday 9:00 AM</td>
             </tr>
             <tr>
               <td>Room</td>
-              <td>PKI 2??</td>
+              <td>PKI 260</td>
             </tr>
             <tr>
               <td>Instructor</td>
@@ -133,14 +132,14 @@
             </tr>
             <tr>
               <td>Office hours</td>
-              <td>Tuesday and Thursdays 10:15 AM - 11:45 AM</td>
+              <td>Tuesday, 10:00 AM - 12:00 PM, or per appointment via Skype (alex@fuchsberger.us)</td>
             </tr>
             <tr>
               <td>On-Line Materials</td>
               <td>
                 External course materials are linked through this online syllabus.<br>
                 In-class coding examples are available here: <a href="https://ide.c9.io/fuchsberger/csit1300" target='_blank'>https://ide.c9.io/fuchsberger/csit1300</a> (requires completed Cloud9-Assignment)<br>
-                Grading is managed through the grading sheet accessible in the top right corner of this syllabus. This will replace blackboard as grading plattform.
+                Grading is managed via Blackboard: <a href="http://blackboard.unomaha.edu/" target='_blank'>http://blackboard.unomaha.edu/</a>
               </td>
             </tr>
             <tr>
@@ -148,23 +147,18 @@
               <td>No textbook is required for this class.</td>
             </tr>
             <tr>
-              <td>Final Exam</td>
-              <td>There will be no final exam during finals week.</td>
-            </tr>
-            <tr>
               <td>Overview</td>
               <td>
-                In this course, we will learn how to create static web pages using HTML5, CSS and JavaScript.
-                We will also learn how to make use of a popular styling library (Bootstrap), in order to create
-                visually professional looking, mobile-friendly websites. We will cover a powerful JavaScript
-                library (jQuery) to make web applications and games like chess, snake and more. The course
-                concludes with an introduction to WordPress, a content-management system that allows you to
-                create professional websites with data associated.
+                In this class, we will learn how to create static web pages using HTML5 (HyperText Markup Language),
+                applying styles and formatting using CSS (Cascading Style Sheets), and learn a powerful contemporary
+                programming language (JavaScript), as well as a popular JS-library (JQuery). We will further learn how tho combine
+                all three languages to create interactive, mobile-friendly client-side web pages and how to make use of a
+                styling and functionality library (Bootstrap).
               </td>
             </tr>
             <tr>
               <td>Prerequisite</td>
-              <td>MATH 1310 (or equivalent) is required. Previous experience in programming, data structures and/or fast keyboard typing will come in handy.</td>
+              <td>No formal computer background is required. It is assumed that you have worked with a computer before.</td>
             </tr>
             <tr>
               <td>Students with Disabilities</td>
@@ -189,9 +183,15 @@
         <h3>Updates in the Syllabus</h3>
         <p>If the syllabus has to be updated during the semester, major changes will be listed in this section and an announcement
         will be send out via Blackboard / email.</p>
-<!--         <ul>
+        <ul>
+          <li><strong>10/27</strong> Made "jQuery: Develop a Game" assignment a possible group project,
+          increase weight of the assignment for the overall score and as a compensation removed on of the
+          Bootstrap homeworks.</li>
+          <li><strong>10/03</strong> Due to the restructuring of Code Academy,
+            we also have to change a few assignments related to tutorials in the JS/Jquery Section from 10/05 to 11.14.</li>
           <li><strong>08/28</strong> Updated Office Hour and Location </li>
-        </ul> -->
+          <li><strong>08/21</strong> A Button "Grades" is now available in the top-right corner. <em>This will replace Blackboard as plattform to view your grades.</em> Whenever I do update the grades, I will update the PDF. Grades are anonymized and you will get your corresponding ID (to lookup your grades) per email.</li>
+        </ul>
 
         <h2 id='schedule'>Schedule</h2>
         <table class="table table-striped table-condensed">
@@ -208,7 +208,7 @@
           <tbody>
             <tr>
               <td>1</td>
-              <td>01/10</td>
+              <td>Mo, 8/22</td>
               <td>Introduction</td>
               <td></td>
               <td>-</td>
@@ -216,312 +216,283 @@
             </tr>
             <tr>
               <td>2</td>
-              <td>01/12</td>
+              <td>We, 8/24</td>
+              <td>IDE & Developing HTML</td>
               <td>
-                Cloud9 IDE & HTML Fundamentals<br>
-                <small>Doctype, Tags, Head, Body, Title</small>
+                <span class="label label-default">Survey (10)</span>
+                <span class="label label-default">Setting up Cloud9 account (10)</span>
               </td>
-              <td>
-                <span class="label label-default">Setting up Cloud9 account (10)</span><br>
-                <span class="label label-default">Setting up Code-Academy account (10)</span><br>
-                <span class="label label-primary">Tutorial: Learn HTML/CSS Unit 1 (10)</span>
-              </td>
-              <td>30</td>
-              <td>30</td>
+              <td>20</td>
+              <td>20</td>
             </tr>
             <tr>
               <td>3</td>
-              <td>01/17</td>
+              <td>Mo, 8/29</td>
+              <td>HTML</td>
               <td>
-                HTML Content<br>
-                <small>Headings, Paragraphs, Lists, Links, Attributes, Images, Paragraphs & Comments</small>
+                <span class="label label-default">Setting up Code-Academy account (10)</span>
+                <span class="label label-primary">Tutorial: HTML/CSS Unit 1 (16)</span>
               </td>
-              <td>
-                <span class="label label-primary">Tutorial: Learn HTML/CSS Unit 2 (10)</span>
-              </td>
-              <td>10</td>
-              <td>40</td>
+              <td>26</td>
+              <td>46</td>
             </tr>
             <tr>
               <td>4</td>
-              <td>01/19</td>
-              <td>CSS Fundamentals<br><small>Setup, Structure & Syntax</small></td>
-              <td><span class="label label-primary">Tutorial: Learn HTML/CSS Unit 3 (10)</span></td>
-              <td>10</td>
-              <td>50</td>
+              <td>We, 8/31</td>
+              <td>HTML</td>
+              <td><span class="label label-primary">Tutorial: HTML/CSS Unit 2 (16)</span></td>
+              <td>16</td>
+              <td>62</td>
+            </tr>
+            <tr class="text-muted">
+              <td></td>
+              <td>Mo, 9/5</td>
+              <td>Labor Day (no class)</td>
+              <td></td>
+              <td>-</td>
+              <td>62</td>
             </tr>
             <tr>
               <td>5</td>
-              <td>01/24</td>
-              <td>Styling with CSS<br><small>Colors & Fonts</small></td>
-              <td>
-                <span class="label label-primary">Tutorial: Learn HTML/CSS Unit 4 (10)</span>
-                <span class="label label-danger">Website ReadMe (20)</span>
-              </td>
-              <td>30</td>
-              <td>80</td>
+              <td>We, 9/7</td>
+              <td>HTML</td>
+              <td><span class="label label-primary">Tutorial: HTML/CSS Unit 3 (16)</span></td>
+              <td>16</td>
+              <td>78</td>
             </tr>
             <tr>
               <td>6</td>
-              <td>01/26</td>
-              <td>Organizing HTML & CSS<br><small>Classes, IDs & Divs</small></td>
+              <td>Mo, 9/12</td>
+              <td>CSS</td>
               <td>
-                <span class="label label-primary">Tutorial: Learn HTML/CSS Unit 5 (10)</span>
-                <span class="label label-warning">Quiz 1 - HTML/CSS Part 1 (40)</span>
+                <span class="label label-primary">Tutorial: HTML/CSS Unit 4 (16)</span>
+                <span class="label label-warning">Quiz 1 - HTML Basics (40)</span>
               </td>
-              <td>50</td>
-              <td>130</td>
+              <td>56</td>
+              <td>134</td>
             </tr>
             <tr>
               <td>7</td>
-              <td>01/31</td>
-              <td>CSS - The Box Model<br><small>Content, Margins, Paddings, Borders</small></td>
-              <td><span class="label label-primary">Tutorial: Learn HTML/CSS Unit 6 (10)</span></td>
-              <td>10</td>
-              <td>140</td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td>02/02</td>
-              <td>CSS Positioning<br><small>Layout, Positioning Types, Units</small></td>
-              <td><span class="label label-primary">Tutorial: Learn HTML/CSS Unit 7 (10)</span></td>
-              <td>10</td>
+              <td>We, 9/14</td>
+              <td>CSS</td>
+              <td><span class="label label-primary">Tutorial: HTML/CSS Unit 5 (16)</span></td>
+              <td>16</td>
               <td>150</td>
             </tr>
             <tr>
+              <td>8</td>
+              <td>Mo, 9/19</td>
+              <td>CSS</td>
+              <td><span class="label label-primary">Tutorial: HTML/CSS Unit 6 (16)</span></td>
+              <td>16</td>
+              <td>166</td>
+            </tr>
+            <tr>
               <td>9</td>
-              <td>02/7</td>
-              <td>Images</td>
-              <td><span class="label label-primary">Tutorial: Learn HTML/CSS Unit 8 (10)</span></td>
-              <td>10</td>
-              <td>160</td>
+              <td>We, 9/21</td>
+              <td>JavaScript</td>
+              <td><span class="label label-primary">Tutorial: JavaScript Unit 1 (16)</span></td>
+              <td>16</td>
+              <td>182</td>
             </tr>
             <tr>
               <td>10</td>
-              <td>02/09</td>
-              <td>HTML Tables</td>
-              <td><span class="label label-primary">Tutorial: Learn HTML/CSS Unit 9 (10)</span></td>
-              <td>10</td>
-              <td>170</td>
+              <td>Mo, 9/26</td>
+              <td>JavaScript</td>
+              <td>
+                <span class="label label-primary">Tutorial: JavaScript Unit 2 (16)</span>
+                <span class="label label-warning">Quiz 2 - CSS Basics (40)</span>
+              </td>
+              <td>56</td>
+              <td>238</td>
             </tr>
             <tr>
               <td>11</td>
-              <td>02/14</td>
-              <td>Bootstrap<br><small>Fundamentals, Requirements, Introduction</small></td>
+              <td>We, 9/28</td>
+              <td>JavaScript</td>
               <td>
-                <span class="label label-warning">Quiz 2 - HTML/CSS Part 2 (40)</span>
-                <span class="label label-danger">Website (HTML/CSS) (120)</span>
+                <span class="label label-primary">Tutorial: JavaScript Unit 3 (16)</span>
+                <span class="label label-danger">Project Proposal (50)</span>
               </td>
-              <td>160</td>
-              <td>330</td>
+              <td>66</td>
+              <td>304</td>
             </tr>
             <tr>
               <td>12</td>
-              <td>02/16</td>
-              <td>Bootstrap<br><small>Typology, Forms, Tables, Buttons,...</small></td>
-              <td></td>
-              <td></td>
-              <td>330</td>
+              <td>Mo, 10/3</td>
+              <td>JavaScript / jQuery</td>
+              <td><span class="label label-primary">Tutorial: JavaScript Unit 4 (16)</span></td>
+              <td>16</td>
+              <td>320</td>
             </tr>
             <tr>
               <td>13</td>
-              <td>02/21</td>
-              <td>
-                Bootstrap - The Grid System<br>
-                <small>Mobile Pages, Dynamic Content based on Screensize, Column Structure</small>
-              </td>
-              <td></td>
-              <td></td>
-              <td>330</td>
+              <td>We, 10/5</td>
+              <td>jQuery & Animation</td>
+              <td><i>16 free points</i></td>
+              <td>16</td>
+              <td>336</td>
             </tr>
             <tr>
               <td>14</td>
-              <td>02/23</td>
-              <td>
-                Bootstrap - Interactive Components<br>
-                <small>Dismissable Alerts, Modals, ScrollSpy, Tooltips, Tabs, Collapse, Carousels</small>
-              </td>
-              <td></td>
-              <td></td>
-              <td>330</td>
+              <td>Mo, 10/10</td>
+              <td>jQuery & Games</td>
+              <td><span class="label label-warning">Quiz 3 - JavaScript (40)</span></td>
+              <td>40</td>
+              <td>376</td>
             </tr>
             <tr>
               <td>15</td>
-              <td>02/28</td>
-              <td>WordPress</td>
-              <td>
-                <span class="label label-warning">Quiz 3 - Bootstrap (40)</span>
-                <span class="label label-danger">Website (Bootstrap) (100)</span>
-              </td>
-              <td>140</td>
-              <td>470</td>
+              <td>We, 10/12</td>
+              <td>jQuery & Games</td>
+              <td></td>
+              <td></td>
+              <td>376</td>
+            </tr>
+            <tr class="text-muted">
+              <td></td>
+              <td>Mo, 10/17</td>
+              <td>Fall Break (no class)</td>
+              <td></td>
+              <td></td>
+              <td>376</td>
             </tr>
             <tr>
               <td>16</td>
-              <td>03/02</td>
-              <td>Wordpress</td>
-              <td></td>
-              <td></td>
-              <td>470</td>
+              <td>We, 10/19</td>
+              <td>jQuery</td>
+              <td><span class="label label-primary">Tutorial: jQuery Unit 1 (12)</span></td>
+              <td>12</td>
+              <td>388</td>
             </tr>
             <tr>
               <td>17</td>
-              <td>03/07</td>
-              <td>Wordpress</td>
-              <td></td>
-              <td></td>
-              <td>470</td>
+              <td>Mo, 10/24</td>
+              <td>jQuery</td>
+              <td>
+                <span class="label label-primary">Tutorial: jQuery Unit 2 (12)</span>
+                <span class="label label-danger">Project 1 (100)</span>
+              </td>
+              <td>112</td>
+              <td>500</td>
             </tr>
             <tr>
               <td>18</td>
-              <td>03/09</td>
-              <td>JavaScript</td>
-              <td>
-                <span class="label label-primary">Tutorial: JavaScript Unit 1 (10)</span>
-              </td>
-              <td>10</td>
-              <td>480</td>
+              <td>We, 10/26</td>
+              <td>jQuery</td>
+              <td><span class="label label-primary">Tutorial: jQuery Unit 3 (12)</span></td>
+              <td>12</td>
+              <td>512</td>
             </tr>
             <tr>
               <td>19</td>
-              <td>03/14</td>
-              <td>JavaScript</td>
-              <td>
-                <span class="label label-primary">Tutorial: JavaScript Unit 2 (10)</span>
-                <span class="label label-danger">Website (Wordpress) (80)</span>
-              </td>
-              <td>90</td>
-              <td>570</td>
+              <td>Mo, 10/31</td>
+              <td>jQuery</td>
+              <td><span class="label label-primary">Tutorial: jQuery Unit 4 (12)</span></td>
+              <td>12</td>
+              <td>524</td>
             </tr>
             <tr>
               <td>20</td>
-              <td>03/16</td>
-              <td>JavaScript</td>
-              <td><span class="label label-primary">Tutorial: JavaScript Unit 3 (10)</span></td>
-              <td>10</td>
-              <td>580</td>
+              <td>We, 11/2</td>
+              <td>jQuery</td>
+              <td>
+                <span class="label label-primary">Tutorial: jQuery Unit 5 (12)</span>
+              </td>
+              <td>12</td>
+              <td>536</td>
             </tr>
-            <tr class="text-muted">
+            <tr>
               <td>21</td>
-              <td>03/21</td>
-              <td><i>Spring Break (no class)</i></td>
+              <td>Mo, 11/7</td>
+              <td>Bootstrap</td>
               <td>
-                <span class="label label-primary">Tutorial: JavaScript Unit 4 (10)</span>
+                <span class="label label-warning">Quiz 4 - jQuery (40)</span>
               </td>
-              <td>10</td>
-              <td>590</td>
+              <td>40</td>
+              <td>576</td>
             </tr>
-            <tr class="text-muted">
+            <tr>
               <td>22</td>
-              <td>03/23</td>
-              <td><i>Spring Break (no class)</i></td>
-              <td>
-                <span class="label label-primary">Tutorial: JavaScript Unit 5 (10)</span>
-              </td>
-              <td>10</td>
-              <td>600</td>
+              <td>We, 11/9</td>
+              <td>Bootstrap</td>
+              <td></td>
+              <td></td>
+              <td>576</td>
             </tr>
             <tr>
               <td>23</td>
-              <td>03/28</td>
-              <td>JavaScript</td>
-              <td><span class="label label-primary">Tutorial: JavaScript Unit 6 (10)</span></td>
-              <td>10</td>
-              <td>610</td>
+              <td>Mo, 11/14</td>
+              <td>Bootstrap</td>
+              <td><span class="label label-primary">jQuery: Develop a Game (78)</span></td>
+              <td>78</td>
+              <td>654</td>
             </tr>
             <tr>
               <td>24</td>
-              <td>03/30</td>
-              <td>JavaScript</td>
-              <td>
-                <span class="label label-primary">Tutorial: JavaScript Unit 7 (10)</span>
-              </td>
-              <td>10</td>
-              <td>620</td>
+              <td>We, 11/16</td>
+              <td>Bootstrap</td>
+              <td></td>
+              <td>-</td>
+              <td>654</td>
             </tr>
             <tr>
               <td>25</td>
-              <td>04/04</td>
-              <td>JavaScript</td>
-              <td>
-                <span class="label label-primary">Tutorial: JavaScript Unit 8 (10)</span>
-                <span class="label label-danger">JS/jQuery Assignment (50)</span>
-              </td>
-              <td>60</td>
-              <td>680</td>
+              <td>Mo, 11/21</td>
+              <td>Bootstrap</td>
+              <td></td>
+              <td>-</td>
+              <td>654</td>
+            </tr>
+            <tr class="text-muted">
+              <td></td>
+              <td>We, 11/23</td>
+              <td><i>Thanksgiving (no class)</i></td>
+              <td></td>
+              <td>-</td>
+              <td>654</td>
             </tr>
             <tr>
               <td>26</td>
-              <td>04/06</td>
-              <td>jQuery</td>
+              <td>Mo, 11/28</td>
+              <td>Special Topic</td>
               <td>
-                <span class="label label-primary">Tutorial: jQuery Unit 1 (6)</span>
-                <span class="label label-warning">Quiz 4 - JavaScript (40)</span>
+                <span class="label label-primary">Bootstrap Homework (36)</span>
+                <span class="label label-warning">Quiz 5 - Bootstrap (40)</span>
               </td>
-              <td>46</td>
-              <td>726</td>
+              <td>76</td>
+              <td>730</td>
             </tr>
             <tr>
               <td>27</td>
-              <td>04/11</td>
-              <td>jQuery</td>
-              <td><span class="label label-primary">Tutorial: jQuery Unit 2 (6)</span></td>
-              <td>6</td>
-              <td>732</td>
-            </tr>
-            <tr>
-              <td>28</td>
-              <td>04/13</td>
-              <td>jQuery</td>
+              <td>We, 11/30</td>
+              <td>Special Topic</td>
               <td>
-                <span class="label label-primary">Tutorial: jQuery Unit 3 (6)</span>
-
+                <span class="label label-default">Survey II (10)</span>
+                <span class="label label-default">Course Evaluation (10)</span>
               </td>
-              <td>6</td>
-              <td>738</td>
-            </tr>
-            <tr>
-              <td>29</td>
-              <td>04/18</td>
-              <td>jQuery</td>
-              <td>
-                <span class="label label-primary">Tutorial: jQuery Unit 4 (6)</span>
-              </td>
-              <td>6</td>
-              <td>744</td>
-            </tr>
-            <tr>
-              <td>30</td>
-              <td>04/20</td>
-              <td>jQuery</td>
-              <td><span class="label label-primary">Tutorial: jQuery Unit 5 (6)</span></td>
-              <td>6</td>
+              <td>20</td>
               <td>750</td>
             </tr>
-            <tr>
-              <td>31</td>
-              <td>04/25</td>
-              <td>Preparation Week<br><small>Game Assignment Coaching (optional class)</small></td>
-              <td>
-                <span class="label label-warning">Quiz 5 - jQuery (40)</span>
-              </td>
-              <td>40</td>
-              <td>790</td>
+            <tr class="text-muted">
+              <td>28</td>
+              <td>Mo, 12/5</td>
+              <td><i>Preparation Week - Project (optional class)</i></td>
+              <td></td>
+              <td>-</td>
+              <td>750</td>
             </tr>
-            <tr>
-              <td>32</td>
-              <td>04/27</td>
-              <td>Preparation Week<br><small>Game Assignment Coaching (optional class)</small></td>
-              <td>
-                <span class="label label-default">Survey (10)</span>
-                <span class="label label-danger">JS/jQuery Game Assignment (100)</span>
-              </td>
-              <td>110</td>
+            <tr class="text-muted">
+              <td>29</td>
+              <td>We, 12/7</td>
+              <td><i>Preparation Week - Project (optional class)</i></td>
+              <td><span class="label label-danger">Project 2 Due (150)</span></td>
+              <td>150</td>
               <td>900</td>
             </tr>
             <tr class="text-muted">
               <td></td>
-              <td>05/02</td>
+              <td>Mo, 12/12</td>
               <td><i>Finals Week (no class)</i></td>
               <td></td>
               <td></td>
@@ -529,7 +500,7 @@
             </tr>
             <tr class="text-muted">
               <td></td>
-              <td>05/04</td>
+              <td>We, 12/14</td>
               <td><i>Finals Week (no class)</i></td>
               <td></td>
               <td></td>
@@ -543,7 +514,7 @@
             </tr>
           </tfoot>
         </table>
-        <p>(*) Assignment is due 10:00 AM on the specified date (beginning of class), unless specified otherwise.</p>
+        <p>(*) Assignment is due 9:00 AM on the specified date (beginning of class), unless specified otherwise.</p>
 
         <h2 id='grading'>Grading</h2>
         <div class="alert alert-warning" role="alert">
@@ -562,31 +533,107 @@
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td>
+                <strong>Attendance</strong><br>
+                <small>Attendance is mandatory. For each attended class a student gets 4 points secured.
+                There are 27 sessions and a student can earn up to 100 points (25x4).<br>
+                As a result, each student can miss a maximum of 2 classes without penalty.<br>
+                For coming late / going early without apologizing before class,
+                a student might loose 1 attendence point for each 15 minutes missing (up to 4 per class).</small>
+              </td>
+              <td><strong>100</strong></td>
+              <td><strong>10%</strong></td>
+            </tr>
             <tr class='bold'>
-              <td>Code Academy Tutorials</td>
-              <td>200</td>
-              <td>20%</td>
+              <td>Homework / Tutorials</td>
+              <td>350</td>
+              <td>35%</td>
             </tr>
             <tr class='small'>
-              <td>Tutorials: Learn HTML/CSS Unit 1-9</td>
-              <td>90</td>
+              <td>Tutorials: HTML / CSS Unit 1-6</td>
+              <td>96</td>
               <td></td>
             </tr>
             <tr class='small'>
               <td>Tutorials: JavaScript Unit 1-8</td>
-              <td>80</td>
+              <td>128</td>
               <td></td>
             </tr>
             <tr class='small'>
               <td>Tutorials: jQuery Unit 1-5</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+            <tr class='small'>
+              <td>Homework jQuery</td>
               <td>30</td>
               <td></td>
             </tr>
-            <!-- ASSIGNMENTS -->
+            <tr class='small'>
+              <td>Homework Bootstrap (2x)</td>
+              <td>56</td>
+              <td></td>
+            </tr>
             <tr class='bold'>
-              <td>Assignments</td>
-              <td>500</td>
-              <td>50%</td>
+              <td>Quizzes</td>
+              <td>200</td>
+              <td>20%</td>
+            </tr>
+            <tr class='small'>
+              <td>Quiz 1 - HTML</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+            <tr class='small'>
+              <td>Quiz 2 - CSS</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+            <tr class='small'>
+              <td>Quiz 3 - JavaScript</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+            <tr class='small'>
+              <td>Quiz 4 - jQuery</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+            <tr class='small'>
+              <td>Quiz 5 - Bootstrap</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+            <tr class='bold'>
+              <td>Project</td>
+              <td>300</td>
+              <td>30%</td>
+            </tr>
+            <tr class='small'>
+              <td>Project Proposal</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+            <tr class='small'>
+              <td>Project 1 (HTML + CSS Solution)</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+            <tr class='small'>
+              <td>Project 2 (Bootstrap / jQuery Solution)</td>
+              <td>150</td>
+              <td></td>
+            </tr>
+            <tr class='bold'>
+              <td>Other</td>
+              <td>50</td>
+              <td>5%</td>
+            </tr>
+            <tr class='small'>
+              <td>Survey (start of class)</td>
+              <td>10</td>
+              <td></td>
             </tr>
             <tr class='small'>
               <td>Setting up Cloud9</td>
@@ -599,77 +646,14 @@
               <td></td>
             </tr>
             <tr class='small'>
-              <td>Topic ReadMe</td>
-              <td>20</td>
-              <td></td>
-            </tr>
-            <tr class='small'>
-              <td>Website (HTML + CSS Solution)</td>
-              <td>120</td>
-              <td></td>
-            </tr>
-            <tr class='small'>
-              <td>Website (Bootstrap Solution)</td>
-              <td>100</td>
-              <td></td>
-            </tr>
-            <tr class='small'>
-              <td>Website (WordPress Solution)</td>
-              <td>80</td>
-              <td></td>
-            </tr>
-            <tr class='small'>
-              <td>JavaScript / jQuery Assignment</td>
-              <td>50</td>
-              <td></td>
-            </tr>
-            <tr class='small'>
-              <td>JavaScript / jQuery Game</td>
-              <td>100</td>
-              <td></td>
-            </tr>
-            <tr class='small'>
-              <td>Survey</td>
+              <td>Survey (end of class)</td>
               <td>10</td>
               <td></td>
             </tr>
-            <tr class='bold'>
-              <td>Quizzes</td>
-              <td>200</td>
-              <td>20%</td>
-            </tr>
             <tr class='small'>
-              <td>Quiz 1 - HTML/CSS Part 1</td>
-              <td>40</td>
+              <td>Course Evaluation</td>
+              <td>10</td>
               <td></td>
-            </tr>
-            <tr class='small'>
-              <td>Quiz 2 - HTML/CSS Part 2</td>
-              <td>40</td>
-              <td></td>
-            </tr>
-            <tr class='small'>
-              <td>Quiz 3 - Bootstrap</td>
-              <td>40</td>
-              <td></td>
-            </tr>
-            <tr class='small'>
-              <td>Quiz 4 - JavaScript / jQuery Part 1</td>
-              <td>40</td>
-              <td></td>
-            </tr>
-            <tr class='small'>
-              <td>Quiz 5 - JavaScript / jQuery Part 2</td>
-              <td>40</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                <strong>Attendance</strong><br>
-                <small>Attendance is mandatory. A student can miss a maximum of 2 classes without penalty. A student starts with full attendance score at the beginning of the semester. The score gets reduced according to the following formula: Score = 100 * (AttendedClasses + 2) / TotalClasses. The maximum reachable score is 100.</small>
-              </td>
-              <td><strong>100</strong></td>
-              <td><strong>10%</strong></td>
             </tr>
           </tbody>
           <tfoot>
@@ -684,7 +668,7 @@
         <h3>Grading Scale</h3>
         <div class="alert alert-warning" role="alert">
           <strong>Warning:</strong> Passing grade for Engineering, Education, Business = <strong>C</strong><br>
-          Passing grade for College of IS&Arts & Sciences = <strong>C-</strong>
+          Passing grade for College of IS&T, Arts & Sciences = <strong>C-</strong>
         </div>
         <table class="table table-striped table-condensed">
           <thead>
@@ -756,17 +740,112 @@
             </tr>
           </tbody>
         </table>
+      <section id='assignments'>
+        <h2>Assignments</h2>
 
-      <section id='tutorials'>
-        <h3>Tutorials</h3>
+        <h3 id='survey1'>Survey : Where we start...</h3>
+        <p>Please complete the survey before our second class!</p>
         <p style='font-weight:bold;'>
-            <span style='color:#AD0000'>Submission Deadline:</span> see schedule<br>
-            <span style='color:#1700AD'>Maximum Score:</span> 10 per unit (default) or 6 per unit (jQuery)<br>
-            Submission via: <span style='font-weight:normal;'>CodeAcademy</span>
+            <span style='color:#AD0000'>Submission Deadline:</span> 08/24 9:00 AM<br>
+            <span style='color:#1700AD'>Maximum Score:</span> 10<br>
+            Submission via: <span style='font-weight:normal;'>Google Forms (link will be on blackboard)</span>
+        </p>
+
+        <h3 id='cloud9'>Setting up Cloud 9</h3>
+        <p style='font-weight:bold;'>
+            <span style='color:#AD0000'>Submission Deadline:</span> 08/24 9:00 AM<br>
+            <span style='color:#1700AD'>Maximum Score:</span> 10<br>
+            Submission via: <span style='font-weight:normal;'>(automatically generated) email</span>
+        </p>
+
+
+        <div class="alert alert-info" role="alert">
+          <strong>Info: </strong><a href='https://c9.io' target='_blank'>Cloud9</a> is a browser-based
+          IDE (development environment) that we will
+          use for all coding activities (except the tutorials, which come with
+          their own interactive solution).<br>
+          Specifically we will use each <strong>student's Cloud9 IDE</strong> for: individual
+          deliverables like project assignments, homeworks<br>
+          Specifically we will use the <strong>instructor's Cloud9 IDE</strong> for:
+          in-class code demonstration and examples, commenting and collaborating
+        </div>
+
+        <p>Students are expected to use their official UNO email address for
+        <a href='https://c9.io/signup' target='_blank'>signing up</a> at Cloud9.
+        The <i>username</i> can be freely chosen, however, if
+        possible - the students last name or something similar is <i>preferred</i>.
+        In case a student already has an account (with a different email),
+        this is fine too as long as a private workspace is available.
+        however the instructor has to be informed about this.</p>
+        <p>After creating the account, students have to create a new private workspace with the following specifications:</p>
+        <ul>
+          <li>Workspace name: <strong>"cist1300"</strong></li>
+          <li><strong>Private</strong> Workspace</li>
+          <li>Type: <strong>HTML5</strong></li>
+        </ul>
+        <p>After the workspace has been created, the following steps have to be taken:</p>
+        <ol>
+          <li>Top Right Corner, there is a SHARE button. <i>Click it</i></li>
+          <li>ensure all three <i>checkmarks</i> for public access are <strong>unchecked</strong>.</li>
+          <li>Invite your instructor into the workspace by adding his email
+            (<i>alex@fuchsberger.us</i>) or username (<i>Sathras</i>).</li>
+          <li><span>Give your instructor read and write privileges.</span></li>
+        </ol>
+        <div class="alert alert-danger" role="alert">
+          <p><strong>Important:</strong> by inviting your instructor into your private workspace,
+          he will receive an email. If you did everything correctly the instructor will invite
+          you to his public workspace as a response on or shortly after due date and 10 score points
+          will be granted for the assignment. You are encouraged to accept the invitation since you
+          will be able to share the instructors screen during classes which is tremendously helpful
+          to follow code examples.</p>
+          <p><strong>Don't let me EVER catch you sharing your private workspace with a fellow student.</strong><br>
+          This may be treated as plagiarim and remember, I can access the workspace at any time -
+          including a history of people who joined / left the workspace.</p>
+        </div>
+
+        <h3 id='codeacademy'>Setting up Code Academy Account</h3>
+        <p style='font-weight:bold;'>
+            <span style='color:#AD0000'>Submission Deadline:</span> 08/29 9:00 AM<br>
+            <span style='color:#1700AD'>Maximum Score:</span> 10<br>
+            Submission via: <span style='font-weight:normal;'>(automatically generated) email</span>
         </p>
         <div class="alert alert-info" role="alert">
+          <strong>Info: </strong><a href='https://www.codecademy.com' target='_blank'>CodeAcademy</a> is a browser-based
+          learning environment, we will use to interactively learn programming in HTML, CSS and JavaScript.
+          This is a replacement for the textbook, other reading materials and homeworks.
+        </div>
+        <p>
+          Students are expected to <a href='https://www.codecademy.com/register' target='_blank'>sign up</a> at CodeAcademy.
+          Please use:
+        </p>
+        <ul>
+          <li><strong>Email</strong> - your @unomaha.edu email address.
+            (In case a student already has an account with a different email,
+            a new account has to be created and used for class)</li>
+          <li><strong>Username</strong> - the same  <i>username</i>, you used for signing up at Cloud9 (if possible)</li>
+          <li><strong>Password - choose a password you don't use anywhere else (instructor will have access to it!</strong></li>
+        </ul>
+
+
+        <div class="alert alert-danger" role="alert">
+          <p><strong>Important:</strong> After creating an account, send your instructor an email with your login information
+          for CodeAcademy (email and password). The instructor will login in regular intervals to verify the progress on the tutorials</p>
+        </div>
+
+        <div class="alert alert-danger" role="alert">
+          <p><strong>Important:</strong> When doing a tutorial, always make sure you are logged in,
+          otherwise the progress doesn't gets accredited to your account and you have to do the tutorial again...</p>
+        </div>
+
+        <h3 id='tutorials'>Tutorials</h3>
+        <p style='font-weight:bold;'>
+            <span style='color:#AD0000'>Submission Deadline:</span> see schedule<br>
+            <span style='color:#1700AD'>Maximum Score:</span> 16 per unit (default) or 8 per unit (jQuery)<br>
+            Submission via: <span style='font-weight:normal;'>CodeAcademy</span>
+        </p>
+        <div class="alert alert-warning" role="alert">
           <p>
-            <strong>Info:</strong>
+            <strong>Warning:</strong>
             Tutorials are due to the specified due date, however the instructor may evaluate the completion
             to a later point in time (usually when all units of a tutorial are completed).<br>
             This gives the students some flexibility when to go through the units.
@@ -776,23 +855,12 @@
           </p>
         </div>
 
-        <div class="alert alert-warning" role="alert">
-          <p>
-            <strong>Warning:</strong>
-            Do not confuse the following Tutorials:
-            <ul>
-              <li>"Learn HTML/CSS" and "HTML/CSS". --> <strong>Learn HTML/CSS</strong> is the correct one.</li>
-              <li>"Learn JavaScript" and "JavaScript" --> <strong>JavaScript</strong> is the correct one.</li>
-            </ul>
-          </p>
-        </div>
-
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingOne">
               <h4 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Learn HTML / CSS <small>(10 points per unit)</small>
+                  HTML / CSS <small>(16 points per unit)</small>
                 </a>
               </h4>
             </div>
@@ -802,7 +870,7 @@
                 <ul>
                   <li>
                     Unit 1 - Introduction to HTML
-                    <a href='https://www.codecademy.com/courses/learn-html-css/lessons/structure/exercises/what-is-html?action=lesson_resume' target='_blank'>HTML Basics</a>,
+                    <a href='https://www.codecademy.com/courses/web-beginner-en-HZA3b' target='_blank'>HTML Basics</a>,
                     <a href='https://www.codecademy.com/courses/web-beginner-en-LceTK' target='_blank'>Build Your Own Webpage</a>
                   </li>
                   <li>
@@ -838,7 +906,7 @@
             <div class="panel-heading" role="tab" id="headingTwo">
               <h4 class="panel-title">
                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  JavaScript <small>(10 points per unit)</small>
+                  JavaScript <small>(16 points per unit)</small>
                 </a>
               </h4>
             </div>
@@ -894,7 +962,7 @@
             <div class="panel-heading" role="tab" id="headingThree">
               <h4 class="panel-title">
                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  jQuery <small>(6 points per unit)</small>
+                  jQuery <small>(8 points per unit)</small>
                 </a>
               </h4>
             </div>
@@ -922,126 +990,48 @@
             </div>
           </div>
         </div>
-      </section>
 
-      <section id='assignments'>
-        <h2>Assignments</h2>
-
-        <!-- Cloud9 -->
-        <h3 id='cloud9'>Setting up Cloud 9</h3>
+        <h3 id='quizzes'>Quizzes</h3>
         <p style='font-weight:bold;'>
-            <span style='color:#AD0000'>Submission Deadline:</span> 01/12 11:59 PM<br>
-            <span style='color:#1700AD'>Maximum Score:</span> 10<br>
-            Submission via: <span style='font-weight:normal;'>Cloud9 / (automatically generated) email</span>
+            <span style='color:#AD0000'>Submission Deadline:</span> see schedule<br>
+            <span style='color:#1700AD'>Maximum Score:</span> 40 (each quiz) * 5 (# of quizzes) = 200<br>
+            Submission via: <span style='font-weight:normal;'>Blackboard</span>
         </p>
+        <p>Quizzes are intended to test the students ability to comprehend the information and programming skills learned.
+        Quizzes are made available in-class at the specified date (usually at the end of the lecture).</p>
+        <ul>
+          <li><strong>Duration:</strong> 15 minutes</li>
+          <li><strong>Type:</strong> Multiple-choice (4 answers, one is correct)</li>
+          <li><strong>Questions:</strong> Each student gets 20 random questions out of a pool of about 70 questions.
+          Each correct answer yields 2 points.</li>
+        </ul>
 
+        <h3 id='game'>jQuery: Develop a game!</h3>
+        <p style='font-weight:bold;'>
+            <span style='color:#AD0000'>Submission Deadline:</span> 11/14 9:00 AM<br>
+            <span style='color:#1700AD'>Maximum Score:</span> 78<br>
+            Submission via: <span style='font-weight:normal;'>Cloud 9</span>
+        </p>
+        <p>The students have to develop a very simple game or web application.<br>
+          This can be anything; the students will be graded based on the grading
+          rubrik below. Please use JavaScript and Jquery in this assignment.</p>
 
         <div class="alert alert-info" role="alert">
-          <strong>Info: </strong><a href='https://c9.io' target='_blank'>Cloud9</a> is a browser-based IDE (development environment) that we will use for all coding activities (except the tutorials, which come with their own interactive solution) and the WordPress assignment.
+          <p><strong>Important</strong> For this assignment you are allowed to
+          team up with your class mates to teams with up to 3 members in total.</p>
+          <p class='text-center lead'><strong><a target='_blank' href='https://docs.google.com/spreadsheets/d/1Qmq-VrQd7GGtquNR6BP3wn8zMuz9D4VgIBkunXtHdHo/edit?usp=sharing'>Here you can state your groups!</a></strong></p>
         </div>
-
+        <strong>If you choose to team up:</strong>
         <ul>
-          <li>Specifically we will use each <strong>student's private workspace (assignments)</strong> for individual assignment submissions</li>
-          <li>Specifically we will use the <strong>instructor's public workspace (cist1300)</strong> for class materials</li>
-          <li>Specifically we will use the <strong>instructor's public workspace (cist1300-class)</strong> for: in-class participation</li>
+          <li>I expect your game to be more sophisticated than if you do on your own</li>
+          <li>If you are the leading programmer, I exect you to tutor your team mates and show them
+          how things work.</li>
+          <li>If you have formed a team, one student sends me an email with the
+          names of the team members. I will then create a repository and invite you to work in there.
+          This way you can work all together on the same code.</li>
+          <li>If you want to work in a team but cannot find partners we will work something
+          out together in class.</li>
         </ul>
-
-        <p>Using Cloud9 as an IDE comes with several advantages:</p>
-        <ul>
-          <li>Students can follow the instructor in class while looking at their own screens. This works like Google Docs and code is updated in real-time. This way students in the last rows will be able to see what the instructor is typing.</li>
-          <li>Cloud9 has a file history system built in and you can easily go back in time and see change after change.</li>
-          <li>Cloud9 has a strong color highlighting built in. This makes code much more readable.</li>
-          <li>There are countless other advantages you will explore and recognize during the semester.</li>
-        </ul>
-
-        <p class='lead'>
-          Students are expected to use their official UNO email address for
-          <a href='https://c9.io/signup' target='_blank'>signing up</a> at Cloud9.
-          The <i>username</i> should be set as following:
-          <strong>"cist2xx"</strong> where xx is the random number you have been assigned to.<br>
-          <small><i>Example: your ID number is 9. Your username will be cist209.</i></small>
-        </p>
-
-        <p>After creating the account, students have to create a new private workspace with the following specifications:</p>
-        <ul>
-          <li>Workspace name: <strong>assignments</strong></li>
-          <li>Workspace security: <strong>private</strong></li>
-          <li>Workspace type: <strong>HTML5</strong></li>
-        </ul>
-
-        <p>After the workspace has been created, the following steps have to be taken:</p>
-        <ol>
-          <li>Top Right Corner, there is a SHARE button. <i>Click it</i></li>
-          <li>ensure all three <i>checkmarks</i> for public access are <strong>unchecked</strong>.</li>
-          <li>Invite your instructor into the workspace by adding his username (<i>Sathras</i>).</li>
-          <li><span>Give your instructor read and write privileges.</span></li>
-        </ol>
-        <div class="alert alert-danger" role="alert">
-          <p><strong>Important:</strong> by inviting your instructor into your private workspace,
-          he will receive an email. If you did everything correctly the instructor will invite
-          you to both his public workspaces (class and course). You have to accept both invitations.</p>
-        </div>
-
-        After you have completed all steps above you should be able to access:
-        <ul>
-          <li><strong>https://ide.c9.io/fuchsberger/cist1300</strong> (Course Materials) - read only</li>
-          <li><strong>https://ide.c9.io/fuchsberger/cist1300-class</strong> (Class Participation) - read/write</li>
-          <li><strong>https://ide.c9.io/cist2xx/assignments</strong> (Assignments) - read/write</li>
-        </ul>
-
-        <div class="alert alert-danger" role="alert">
-          <p><strong>Don't let me EVER catch you sharing your private workspace (assignments) with a fellow student.</strong><br>
-          This may be treated as plagiarim and remember, I can access the workspace at any time -
-          including a history of people who joined / left the workspace.</p>
-        </div>
-
-
-        <h3 id='codeacademy'>Setting up Code Academy Account</h3>
-        <p style='font-weight:bold;'>
-            <span style='color:#AD0000'>Submission Deadline:</span> 01/12 11:59 PM<br>
-            <span style='color:#1700AD'>Maximum Score:</span> 10<br>
-            Submission via: <span style='font-weight:normal;'>(automatically generated) email</span>
-        </p>
-        <div class="alert alert-info" role="alert">
-          <strong>Info: </strong><a href='https://www.codecademy.com' target='_blank'>CodeAcademy</a> is a browser-based
-          learning environment, we will use to interactively learn programming in HTML, CSS and JavaScript.
-          This is a replacement for the textbook, other reading materials and homeworks.
-        </div>
-        <p>
-          Students are expected to <a href='https://www.codecademy.com/register' target='_blank'>sign up</a> at CodeAcademy.
-          Please use:
-        </p>
-        <ul>
-          <li><strong>Email</strong> - your @unomaha.edu email address.
-            (In case a student already has an account with a different email,
-            a new account has to be created and used for class)</li>
-          <li><strong>Username</strong> - the same  <i>username</i>, you used for signing up at Cloud9 (unomaha2xx, where xx is your ID number)</li>
-          <li><strong>Password - choose a password you don't use anywhere else (instructor will have access to it!)</strong></li>
-        </ul>
-
-
-        <div class="alert alert-danger" role="alert">
-          <p><strong>Important:</strong> After creating an account, send your instructor an email with your login information
-          for CodeAcademy (username and password). The instructor will login in regular intervals to verify the progress on the tutorials.</p>
-        </div>
-
-        <div class="alert alert-danger" role="alert">
-          <p><strong>Important:</strong> When doing a tutorial, always make sure you are logged in,
-          otherwise the progress doesn't gets accredited to your account and you have to do the tutorial again...</p>
-        </div>
-
-        <h3 id='website-readme'>Website - Readme</h3>
-        <p style='font-weight:bold;'>
-            <span style='color:#AD0000'>Submission Deadline:</span> 01/24 10:00 AM<br>
-            <span style='color:#1700AD'>Maximum Score:</span> 20<br>
-            Submission via: <span style='font-weight:normal;'>Cloud9</span>
-        </p>
-        <p>Every Development Project should have a ReadMe. The purpose is to describe the project and provide important related information like contributors, external sources and more.</p>
-
-        <p>In this exercise the students will have to write a brief readme.md file using the mark-down language.</p>
-
-        <p>The readme.md file should be placed in the root of the student's private workspace and should be named readme.md. You can replace the content of the sample readme.md that is always present in a new cloud9 workspace.</p>
-        The description of your website topic should be sharp - that means short but very precicely capturing the content of your website.
 
         <table class='table table-condensed table-striped'>
           <thead>
@@ -1052,210 +1042,36 @@
           </thead>
           <tbody>
             <tr>
-              <td>Quality of ReadMe File (organized file structure, placed and named correctly, usage of at least a few markdown concepts like lists, headings, links...)</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <td>Quality of ReadMe Content (only significant text for description, but simulaniously complete and precise information about the intendet topic)</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <td>Relevance / Suiteability of topic (can it be easily accomondated in all three website projects)</td>
-              <td>4</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td><strong>Total</strong></td>
-              <td><strong>20</strong></td>
-            </tr>
-          </tfoot>
-        </table>
-
-
-        <div class="alert alert-info" role="alert">
-          <p><strong>Idea:</strong> It is probably helpful to look at the grading rubric for the three implementations of the website, to see if the intended project topic is actually suiteable for all website assignments. Keep the topic very basic and specific and you will avoid problems and extra effort later!</p>
-        </div>
-
-        <h4>Sample Topics</h4>
-        <ul>
-          <li>Personal Website about yourself</li>
-          <li>Company Profile</li>
-          <li>Website on a specific theme (e.g. Politics, Nature,...)</li>
-          <li>Online Resume / CV</li>
-          <li>Landing Page (e.g. marketing an event)</li>
-          <li>Appartment for Rent</li>
-          <li>Information Page about a personal Hobby</li>
-          <li>Information Page about a personal idol (band, politician, actor,...)</li>
-        </ul>
-
-        <h3 id='website-hc'>Website - HTML & CSS Solution</h3>
-        <p style='font-weight:bold;'>
-            <span style='color:#AD0000'>Submission Deadline:</span> 02/14 10:00 AM<br>
-            <span style='color:#1700AD'>Maximum Score:</span> 120<br>
-            Submission via: <span style='font-weight:normal;'>Cloud9</span>
-        </p>
-        <p>The students will implement the project suggested in the proposal using
-        simple HTML and CSS. No JavaScript, other programming languages, or any external frameworks are allowed for this project. The students will be graded based on the following rubric:</p>
-
-        <table class='table table-condensed table-striped'>
-          <thead>
-            <tr>
-              <th>Grading Rubric</th>
-              <th>Score</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Alignment to original Project Proposal</td>
+              <td>Game purpose must be clear to outside viewers.</td>
               <td>10</td>
             </tr>
             <tr>
-              <td>Proper Metatags, Title, and Comments</td>
-              <td>10</td>
+              <td>The proposed game works without any errors.</td>
+              <td>18</td>
             </tr>
             <tr>
-              <td>Included Links, Lists, Sections and more HTML</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>Included a picture gallery</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>Layout and Content</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>Included a working navigation menu (multipage or singlepage)</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>Use of CSS, Style & Overall Design</td>
+              <td>You have to show that you are processing user input. This could
+              be form fields, mouse clicks, anything that reacts to the user.
+              If using form fields also validate (ensure users are not typing text
+              in number fields for example)</td>
               <td>20</td>
             </tr>
             <tr>
-              <td>Code Validation (no code errors) and quality of code structure</td>
-              <td>10</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3 id='website-bt'>Website - jQuery & Bootstrap Solution</h3>
-        <p style='font-weight:bold;'>
-            <span style='color:#AD0000'>Submission Deadline:</span> 02/28 10:00 AM<br>
-            <span style='color:#1700AD'>Maximum Score:</span> 100<br>
-            Submission via: <span style='font-weight:normal;'>Cloud9</span>
-        </p>
-        <p>The students will implement the project suggested in the project readMe using
-        Bootstrap. JavaScript and JQuery are allowed for this project.
-        To make it more challenging no custom CSS is allowed in this project.
-        You wont not need it for a basic bootstrap website.<br>
-        You shall be encouraged to try out as many elements Boostrap provides,
-        however think about how you integrate them into your page so it fits.</p>
-        <p>The students will be graded based on the following rubric:</p>
-
-        <table class='table table-condensed table-striped'>
-          <thead>
-            <tr>
-              <th>Grading Rubric</th>
-              <th>Score</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Website Consistency and Quality (elements fit together, clear purpose, structure,
-              proper use of grid system, usage of panels, wells or other area-defining containers)</td>
-              <td>40</td>
-            </tr>
-            <tr>
-              <td>Contact form</td>
+              <td>The game should react to user input. That means I do want to
+              see html elements change. This can be content, styling,...</td>
               <td>15</td>
             </tr>
             <tr>
-              <td>Picture Gallery / Carousel</td>
+              <td>Code Structure! Use a main game class and split every process
+              into its own function (the inclass-chess example is a good one to compare with)</td>
               <td>15</td>
             </tr>
-            <tr>
-              <td>Mobile Friendliness</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>Navigation Menu</td>
-              <td>15</td>
-            </tr>
-          </tbody>
-          <tfoot>
             <tr>
               <td><strong>Total</strong></td>
-              <td><strong>100</strong></td>
-            </tr>
-          </tfoot>
-        </table>
-
-        <h3 id='website-wp'>Website - WordPress Solution</h3>
-        <p style='font-weight:bold;'>
-            <span style='color:#AD0000'>Submission Deadline:</span> 03/14 10:00 AM<br>
-            <span style='color:#1700AD'>Maximum Score:</span> 80<br>
-            Submission via: <span style='font-weight:normal;'>Cloud9</span>
-        </p>
-        <p>The students will implement the project suggested in the project readMe using
-        the WordPress framework. No files shall be alterated, students are expected to only use the WordPress configuration panels to built the website.<br>
-        You shall be encouraged to download and install wordpress plugins/widgets and/or themes to make your website visually more appealing and functionally professional.</p>
-
-        <p>To start the assignments students will have to create a new workspace in the cloud9 dashboard:</p>
-        <ul>
-          <li>Workspace name: <strong>wordpress</strong></li>
-          <li>Workspace security: <strong>public</strong></li>
-          <li>Workspace type: <strong>wordpress</strong></li>
-        </ul>
-
-        <p>The students will be graded based on the following rubric:</p>
-        <table class='table table-condensed table-striped'>
-          <thead>
-            <tr>
-              <th>Grading Rubric</th>
-              <th>Score</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Setting up a working Wordpress Page (public workspace /  name: wordpress)</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>Contact form or other functional plugin</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>Picture Gallery (can be an external plugin)</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>Blog with at least 3 entries</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>Working Navigation Menu to access all parts of your page</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>Mobile Friendliness and Layout (a good theme can help a lot here)</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>Usage of a different Theme (not the default ones) and overall look of the page</td>
-              <td>20</td>
+              <td><strong>78</strong></td>
             </tr>
           </tbody>
-          <tfoot>
-            <tr>
-              <td><strong>Total</strong></td>
-              <td><strong>80</strong></td>
-            </tr>
-          </tfoot>
         </table>
-<!--
 
         <h3 id='assignment_bootstrap'>Bootstrap Assignment</h3>
         <p style='font-weight:bold;'>
@@ -1328,27 +1144,24 @@
               <td><strong>36</strong></td>
             </tr>
           </tbody>
-        </table> -->
+        </table>
 
-
-        <h3 id='js-agmt'>JavaScript / jQuery Assignment</h3>
+        <h3 id='proposal'>Project Proposal</h3>
         <p style='font-weight:bold;'>
-            <span style='color:#AD0000'>Submission Deadline:</span> 04/04 10:00 AM<br>
+            <span style='color:#AD0000'>Submission Deadline:</span> 09/28 9:00 AM<br>
             <span style='color:#1700AD'>Maximum Score:</span> 50<br>
-            Submission via: <span style='font-weight:normal;'>Cloud9</span>
+            Submission via: <span style='font-weight:normal;'>Blackboard</span>
         </p>
-
-        <p>The Assignment is to program a small app using jQuery. Given a html file including a Bootstrap table, add a JavaScript file, that allows you to:</p>
+        <p>The students have to write a two-page proposal about a website they are intending
+        to develop during the course.</p>
         <ul>
-          <li>sort tabled by each column (asc and dsc)</li>
-          <li>hide/show individual columns</li>
-          <li>reset the table to the default view</li>
+          <li>Students will be provided a word template which they <strong>must use</strong> for their submission.</li>
+          <li>There will also be a list of sample ideas provided to the students which can help in finding a good topic.</li>
         </ul>
-        <p>You wont have to alter the existing html file to enable all the functionality described above.</p>
 
-        <div class="alert alert-info" role="alert">
-          <p><strong>Advice:</strong> You might first want to get the data already present in the table and add it to a JavaScript object that can then be sorted and filtered.</p>
-        </div>
+        <a class='btn btn-large btn-primary' target='blank' href='../downloads/project/template.docx'>
+          Download Proposal Template
+        </a>
 
         <table class='table table-condensed table-striped'>
           <thead>
@@ -1359,41 +1172,49 @@
           </thead>
           <tbody>
             <tr>
-              <td>All Functionality working as expected without altering the HTML file.</td>
+              <td>Template (guidelines followed)</td>
               <td>5</td>
             </tr>
             <tr>
-              <td>Reset Button working</td>
+              <td>Idea (creativity and uniqueness)</td>
               <td>10</td>
             </tr>
             <tr>
-              <td>Showing / hiding columns works</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>Sorting of individual columns works</td>
+              <td>Description (level of detail and quality)</td>
               <td>25</td>
             </tr>
             <tr>
-              <td><strong>Total</strong></td>
-              <td><strong>50</strong></td>
+              <td>Relevance / Completeness (room for everyting required in project 1 and 2)</td>
+              <td>10</td>
             </tr>
           </tbody>
         </table>
 
-        <h3 id='js-game'>JavaScript / jQuery: Game Assignment</h3>
-        <p style='font-weight:bold;'>
-            <span style='color:#AD0000'>Submission Deadline:</span> 04/27 10:00 AM<br>
-            <span style='color:#1700AD'>Maximum Score:</span> 100<br>
-            Submission via: <span style='font-weight:normal;'>Cloud 9</span>
-        </p>
-        <p>The students have to develop a simple game.<br>
-          This can be anything; the students will be graded based on the grading
-          rubrik below. Please use JavaScript and Jquery in this assignment. CSS, HTML and external resources are allowed, if the student properly cites frameworks.</p>
 
         <div class="alert alert-info" role="alert">
-          <p><strong>Important</strong> Only basic resources (frameworks/libraries) are allowed as external content. No given code examples from the internet or other sources may be used.</p>
+          <p><strong>Idea:</strong> It is probably helpful to look at the grading rubric for Project 1 and 2 to see if
+          the intended project actually includes all elements, that are required to reach full score.</p>
         </div>
+
+        <h4>Sample Topics</h4>
+        <ul>
+          <li>Personal Website about yourself</li>
+          <li>Company Profile</li>
+          <li>Website on a specific theme (e.g. Politics, Nature,...)</li>
+          <li>Online Resume / CV</li>
+          <li>Landing Page (e.g. marketing an event)</li>
+          <li>Appartment for Rent</li>
+        </ul>
+
+        <h3 id='project1'>Project 1 (HTML & CSS)</h3>
+        <p style='font-weight:bold;'>
+            <span style='color:#AD0000'>Submission Deadline:</span> 10/24 9:00 AM<br>
+            <span style='color:#1700AD'>Maximum Score:</span> 100<br>
+            Submission via: <span style='font-weight:normal;'>Cloud9</span>
+        </p>
+        <p>The students will implement the project suggested in the proposal using
+        simple HTML and CSS. No JavaScript or other advanced languages are allowed for this project.<br>
+        The students will be graded based on the following rubric:</p>
 
         <table class='table table-condensed table-striped'>
           <thead>
@@ -1404,83 +1225,125 @@
           </thead>
           <tbody>
             <tr>
-              <td>Game purpose must be clear to outside viewers.</td>
+              <td>Alignment to original Project Proposal</td>
               <td>10</td>
             </tr>
             <tr>
-              <td>The proposed game works without any errors.</td>
-              <td>20</td>
+              <td>Proper Metatags, Title, and Comments</td>
+              <td>10</td>
             </tr>
             <tr>
-              <td>Input Processing <small>You have to show that you are processing user input. This could
-              be form fields, mouse clicks, anything that reacts to the user.
-              If using form fields also validate (ensure users are not typing text
-              in number fields for example)</small></td>
-              <td>20</td>
+              <td>Included Links, Lists, Sections and more HTML</td>
+              <td>10</td>
             </tr>
             <tr>
-              <td>The game should react to user input. That means I do want to
-              see html elements change. This can be content, styling,...</td>
+              <td>Included a picture gallery</td>
               <td>15</td>
             </tr>
             <tr>
-              <td>Code Structure! <small>Use a main game class and split processes into functions
-              (the inclass-chess example is a good one to compare with)</small></td>
+              <td>Layout and Content</td>
               <td>15</td>
             </tr>
             <tr>
-              <td>Complexity. <small>Student project last year ranged from simple click-as-fast-as-you-can to advanced super-mario games including a sophisticated physics engine. For this assigment a minimum complexitiy/quality is required. If you are unsure, you can consult me in/after class or during office hours.</small></td>
+              <td>Included a working navigation menu (multipage or singlepage)</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Use of CSS, Style & Overall Design</td>
               <td>20</td>
             </tr>
             <tr>
-              <td><strong>Total</strong></td>
-              <td><strong>100</strong></td>
+              <td>Code Validation (no code errors) and quality of code structure</td>
+              <td>10</td>
             </tr>
           </tbody>
         </table>
 
-        <h3 id='survey'>Survey</h3>
+        <h3 id='project2'>Project 2 (jQuery & Bootstrap)</h3>
+        <p style='font-weight:bold;'>
+            <span style='color:#AD0000'>Submission Deadline:</span> 12/07 9:00 AM<br>
+            <span style='color:#1700AD'>Maximum Score:</span> 150<br>
+            Submission via: <span style='font-weight:normal;'>Cloud9</span>
+        </p>
+        <p>The students will implement the project suggested in the proposal using
+        Bootstrap. JavaScript and JQuery are allowed for this project, the use of own
+        styling (creating a custom CSS file) is discouraged. You should not need it for your page.<br>
+        You shall be encouraged to try out as many elements Boostrap provides,
+        however think about how you integrate them into your page so it fits. The
+        project may deviate from the original proposal in terms of styling
+        and content, however make sure you don't only copy/paste elements from Bootstrap,
+        but additionally modify them so the fit into your page.</p>
+        <p>The students will be graded based on the following rubric:</p>
+
+        <table class='table table-condensed table-striped'>
+          <thead>
+            <tr>
+              <th>Grading Rubric</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Website Consistency (elements fit together, clear purpose, structure,
+              proper use of grid system, usage of panels, wells or other area-defining containers)</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Contact form</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Contact Form Validation (ensure that if a user e.g. doesn't enter
+              a valid email address, add validation-class, will give a hint how to do that in class next time).</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Picture Gallery / Carousel</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Mobile Friendliness</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Navigation Menu</td>
+              <td>20</td>
+            </tr>
+
+          </tbody>
+          <tfoot>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>150</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <h3 id='survey2'>Survey : Where we end...</h3>
         <p>Please complete the survey before the last class and see how much we improved!</p>
         <p style='font-weight:bold;'>
-            <span style='color:#AD0000'>Submission Deadline:</span> 04/27 10:00 AM<br>
+            <span style='color:#AD0000'>Submission Deadline:</span> 11/30 11:00 AM<br>
             <span style='color:#1700AD'>Maximum Score:</span> 10<br>
-            Submission via: <span style='font-weight:normal;'>Google Forms</span>
+            Submission via: <span style='font-weight:normal;'>Google Forms (link will be on blackboard)</span>
         </p>
         <p>
-          <a class='btn btn-primary' disabled href='#'
-          target='_blank' role="button">Survey</a>
-          <span class="text-danger">The Survey is not available at this point in time.</span>
+          <a class='btn btn-primary' href='https://goo.gl/forms/xRqaXFEBsZVpJH7H2'
+          target='_blank' role="button">Survey 2</a>
         </p>
+
+        <h3 id='evaluation'>Course Evaluation</h3>
+        <p>Course Evaluation is extremely helpful and important for the college
+        and the instructor. This helps to improve the material and sessions for
+        future classes. To recieve 10 points for completing the course evaluation,
+        please send a screenshot from your Mavlink indicating you have completed the evaluation for this course.
+        Your NU-ID or username must be visible in the screenshot.<br>
+        Example Screenshot: not provided yet</p>
+
+        <div class="alert alert-warning" role="alert"><strong>Warning!</strong> Please don't send
+        send a screenshot while you are still filling out the evaluation. This should remain anonymous!</div>
       </section>
 
-      <section id='quizzes'>
-        <h3>Quizzes</h3>
-        <p style='font-weight:bold;'>
-            <span style='color:#AD0000'>Submission Deadline:</span> see schedule<br>
-            <span style='color:#1700AD'>Maximum Score:</span> 40 (each quiz) * 5 (# of quizzes) = 200<br>
-            Submission via: <span style='font-weight:normal;'>Blackboard</span>
-        </p>
-        <p>Quizzes are intended to test the students ability to comprehend the information and programming skills learned.
-        Additionally to understanding the concepts, students need to accumulate experience in programming to achieve high
-        scores in the quizzes.
-        Quizzes are made available in-class at the specified date (usually at the end of the lecture).</p>
-        <ul>
-          <li><strong>Duration:</strong> 20 minutes</li>
-          <li><strong>Type:</strong> Multiple-choice (4 answers, one is correct)</li>
-          <li><strong>Questions:</strong> Each student gets 20 random questions out of a pool of about 70 questions.
-          Each correct answer yields 2 points.</li>
-        </ul>
 
-        <strong>Rules</strong>
-        <ul>
-          <li>If students misses an in-class quiz and has given the instructor a valid excuse <strong>before the class</strong>,
-              they can retake the quiz at a later point (within one week).
-              The quiz will have to be taken during office hours at the instructor's office.
-              This will not result in a reduction of the score if the excuse is acceptable.
-          </li>
-          <li>Failing to take the quiz within one week after the original date is evaluated with a score of 0</li>
-        </ul>
-      </section>
 
         <h2 id='rules'>Rules</h2>
         <div class="alert alert-info" role="alert">
@@ -1490,16 +1353,19 @@
 
         <strong>Assignments</strong>
         <ul>
-          <li>If not specified otherwise, the assignment is due to 10:00 AM on the specified date (beginning of class).</li>
+          <li>If not specified otherwise, the assignment is due to 9:00 AM on the specified date (beginning of class).</li>
           <li>Missing an Assignment deadline by 1 minute to 72 hours results in a reduced score by 25%.</li>
           <li>Missing an Assignment deadline by more than 72 hours results in a score of 0 for the assignment.</li>
         </ul>
 
-        <strong>Attendance</strong>
+        <strong>Quizzes</strong>
         <ul>
-          <li>
-            Attendance is mandatory and the score is automatically calculated based on the number classes you have attended/missed. If individual students repeatitively come late / go early, the instructor reserves the right to refuse accrediting attendance for classes where such incidents occured.
+          <li>If students misses an in-class quiz and has given the instructor a valid excuse <strong>before the class</strong>,
+              they can retake the quiz at a later point (within one week).
+              The quiz will have to be taken during office hours at the instructor's office.
+              This will not result in a reduction of the score if the excuse is acceptable.
           </li>
+          <li>Failing to take the quiz within one week after the original date is evaluated with a score of 0</li>
         </ul>
 
         <strong>Cellular Phone / Wireless Internet Access Policy</strong>
@@ -1605,18 +1471,18 @@
           <tbody>
             <tr>
               <td>Blackboard</td>
-              <td>Get personal ID number, Announcements, Quizzes</td>
-              <td>Quizzes, Course Evaluation</td>
+              <td>Submissions</td>
+              <td>Survey 1, Survey 2, Quizzes, Project Proposal, Course Evaluation</td>
             </tr>
             <tr>
               <td>Instructor's public Cloud9 Environment</td>
-              <td>In class code examples, additional links and resources, In class - group works and code sharing</td>
+              <td>In class code examples, additional links and resources, Code Sharing and Collaboration</td>
               <td>-</td>
             </tr>
             <tr>
               <td>Student's private Cloud9 Environment</td>
-              <td>Code Assignments, individual learning space</td>
-              <td>All coding assignments</td>
+              <td>Testing and individual learning space and submissions</td>
+              <td>Bootstrap Homework 1, Bootstrap Homework 2, Project 1, Project 2</td>
             </tr>
             <tr>
               <td>Code Academy</td>
@@ -1625,6 +1491,23 @@
             </tr>
           </tbody>
         </table>
+
+        <h2 id='specialTopics'>Special Topics</h2>
+        <p>The students will vote on 2 advanced topics related to web development for the last two sessions.
+        In case some previous sections are unfinished (e.g. due to cancelation of a class), this sessions may serve as a buffer,
+        and will be used to compensate for the lost time.</p>
+        <ul>
+          <li><strong>GitHub</strong> - Code Collaboration and Versioning</li>
+          <li><strong>CMS & Wordpress</strong> - How to build quick websites with limited skills</li>
+          <li><strong>Productivity, Tools, Libraries</strong> - How to make your life easier</li>
+          <li><strong>How to develop a game</strong> - How to have fun!</li>
+          <li><strong>Search Engine Optimization and Google Analytics</strong> - How to improve websites in Google rankings</li>
+          <li><strong>Web Applications and Frameworks</strong> - How to built real-time web applications with database</li>
+        </ul>
+        <div class="alert alert-info" role="alert">
+          <strong>Voting Process:</strong> Each student has 3 points that he/she can distribute to the 6 topics.
+          The two topics with the most points will be chosen. The voting will happen on <strong>Mo, 11/21 in class</strong>.
+        </div>
 
         <h2 id='instructor'>Instructor</h2>
         <div class='well media'>

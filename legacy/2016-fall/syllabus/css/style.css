@@ -1,0 +1,11 @@
+body { 
+    padding-top: 70px; 
+    position:relative;
+}
+
+.table-firstbold th:nth-child(1), .table-firstbold td:nth-child(1) { 
+    font-weight: bold; 
+}
+
+.bold { font-weight: bold;}
+.small { font-size: 85%; }
