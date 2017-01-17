@@ -1,0 +1,14 @@
+Todays Program
+
+1. Basics of HTML & How to handle Cloud9
+2. Structure of HTML (analyzing a given code file)
+3. Group Excercise
+
+Group Excercise
+ - Lets create a website together!
+ - go to https://ide.c9.io/fuchsberger/cist1300-class
+
+ - create a new file in the folder 1/pages/ and name it whatever you like (lowercase, no spaces, no special characters)
+ - now add a basic html structure
+ - now add a link to the main index.html
+ - inside the index.html update one of the list entries to add a link to your page
