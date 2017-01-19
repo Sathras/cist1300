@@ -82,7 +82,8 @@
         <ul class="nav navbar-nav navbar-right">
           <li>
             <p class="navbar-btn">
-              <a href='../downloads/grades.pdf' target='_blank' class='btn btn-danger'>Grades</a>
+              <!-- ../downloads/grades.pdf -->
+              <a class='btn btn-danger' disabled>Grades</a>
             </p>
           </li>
         </ul>
@@ -956,21 +957,45 @@
           <li>There are countless other advantages you will explore and recognize during the semester.</li>
         </ul>
 
-        <p class='lead'>
-          Students are expected to use their official UNO email address for
-          <a href='https://c9.io/signup' target='_blank'>signing up</a> at Cloud9.
-          The <i>username</i> should be set as following:
-          <strong>"cist2xx"</strong> where xx is the random number you have been assigned to.<br>
-          <small><i>Example: your ID number is 9. Your username will be cist209.</i></small>
+        <h4>Your Student ID number</h4>
+        <p>
+          Each student has been assigned a random ID number (that can be found in blackboard under "grades". This number will determine your accounts username and name.
+          <i>Example: your ID number is 9. Your username will be cist209.</i>
         </p>
 
+        <h4>1. Sign Up at Cloud9</h4>
+        <ol>
+          <li>You have gotten an email that looks like this:<br />
+            <blockquote>
+              <p>Welcome!</p>
+              <p>You've been invited to develop software with cist1300 on Cloud9. Click the following link to accept the invitation: https://c9.io/team/invite/9cE5r5mGh4dsK20SwEjV</p>
+              <p>----------------------------------------------------------------------------------------------------------------</p>
+              <p>Cloud9 is a full-featured IDE in the cloud, combining a powerful online code editor with a full Ubuntu workspace.</p>              Happy coding!
+            </blockquote>
+          </li>
+          <li>
+            Follow the link and sign up for an account with the following settings:
+            <ul>
+              <li>
+                Name: <strong>cist2xx</strong> (where xx is your id number, see above)<br />
+                <strong class='text-danger'>It is very important to not use your real name here, otherwise classmates can identify you!</strong>
+              </li>
+              <li>Username: cist2xx (where xx is your id number, see above)</li>
+            </ul>
+          </li>
+        </ol>
+
+
+        <h4>2. Create your private workspace</h4>
         <p>After creating the account, students have to create a new private workspace with the following specifications:</p>
         <ul>
           <li>Workspace name: <strong>assignments</strong></li>
-          <li>Workspace security: <strong>private</strong></li>
-          <li>Workspace type: <strong>HTML5</strong></li>
+          <li>Team: <strong>CIST 1300</strong></li>
+          <li>Hosted Workspace security: <strong>private</strong></li>
+          <li>Choose a template: <strong>HTML5</strong></li>
         </ul>
 
+        <h4>3. Share it with your instructor</h4>
         <p>After the workspace has been created, the following steps have to be taken:</p>
         <ol>
           <li>Top Right Corner, there is a SHARE button. <i>Click it</i></li>
@@ -1002,7 +1027,7 @@
         <p style='font-weight:bold;'>
             <span style='color:#AD0000'>Submission Deadline:</span> 01/12 11:59 PM<br>
             <span style='color:#1700AD'>Maximum Score:</span> 10<br>
-            Submission via: <span style='font-weight:normal;'>(automatically generated) email</span>
+            Submission via: <span style='font-weight:normal;'>Email</span>
         </p>
         <div class="alert alert-info" role="alert">
           <strong>Info: </strong><a href='https://www.codecademy.com' target='_blank'>CodeAcademy</a> is a browser-based
