@@ -1,0 +1,34 @@
+Session Schedule
+    - CodeAcademy Unit 2 wrap up
+    - Cloud9 Security
+    - links (relative VS absolute)
+    - Assignment 1
+    - comments
+    - Assignment 2
+    - Basic Styling (if we have time): font size, color, family, background color
+
+Assignment 1 (10-15 min)
+    1. look for a small image in the interent and find out the absolute path
+    2. upload the file to your repository
+    3. create a HTML file with 3 links showing the same image:
+        - a absolute link to the original file
+        - a relative link to the file on your server
+        - a absolute link to the file on your server
+
+        ensure the image and the html file are not in the same directory
+        usually web developers put all image files in a folder "img"
+
+Assignment 2 (25-30 min)
+    - make a complete webpage with 4 different pages, connected via
+    a menu (same menu on each page)
+        - index.html
+        - page1.html
+        - page2.html
+        - page3.html
+    - separate menu from page content via 2 div blocks!
+    - provide at least a heading and content on each page
+
+    Challenge: (try making the menu a horizontal list!
+
+Tools
+    - Validator
