@@ -69,7 +69,7 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"
             role="button" aria-haspopup="true" aria-expanded="false">Other <span class="caret"></span></a>
-            <ul id='dropdownAssignments' class="dropdown-menu">
+            <ul id='dropdownOther' class="dropdown-menu">
               <li><a href="#systems">Systems</a></li>
               <li><a href="#rules">Rules</a></li>
               <li><a href="#plagiarism">Plagiarism</a></li>
@@ -179,11 +179,19 @@
         <h3>Updates in the Syllabus</h3>
         <p>If the syllabus has to be updated during the semester, major changes will be listed in this section and an announcement
         will be send out via Blackboard / email.</p>
-<!--         <ul>
-          <li><strong>08/28</strong> Updated Office Hour and Location </li>
-        </ul> -->
+         <ul>
+          <li><strong>01/24</strong> program for each class can from now on be found in the syllabus directly in the schedule.</li>
+        </ul>
 
         <h2 id='schedule'>Schedule</h2>
+
+        <p>
+          <button type="button" class="btn btn-info btn-xs">
+            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+          </button>
+          This symbol indicates that there is more information on the agenda and/or in-class assignments. Click it to display.
+        </p>
+
         <table class="table table-striped table-condensed">
           <thead>
             <tr>
@@ -246,7 +254,12 @@
             <tr>
               <td>5</td>
               <td>01/24</td>
-              <td>CSS Fundamentals<br><small>Setup, Structure & Syntax</small></td>
+              <td>
+                <button type="button" class="btn btn-info btn-xs"
+                  data-toggle="modal" data-target="#prog5">
+                  <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                </button>
+                CSS Fundamentals<br><small>Setup, Structure & Syntax</small></td>
               <td><span class="label label-primary">Tutorial: Learn HTML/CSS Unit 3 (10)</span></td>
               <td>10</td>
               <td>50</td>
@@ -770,12 +783,11 @@
         <div class="alert alert-warning" role="alert">
           <p>
             <strong>Warning:</strong>
-            Do not confuse the following Tutorials:
-            <ul>
-              <li>"Learn HTML/CSS" and "HTML/CSS". --> <strong>Learn HTML/CSS</strong> is the correct one.</li>
-              <li>"Learn JavaScript" and "JavaScript" --> <strong>JavaScript</strong> is the correct one.</li>
-            </ul>
-          </p>
+            Do not confuse the following Tutorials:</p>
+          <ul>
+            <li>"Learn HTML/CSS" and "HTML/CSS". --> <strong>Learn HTML/CSS</strong> is the correct one.</li>
+            <li>"Learn JavaScript" and "JavaScript" --> <strong>JavaScript</strong> is the correct one.</li>
+          </ul>
         </div>
 
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -1420,7 +1432,7 @@
             Submission via: <span style='font-weight:normal;'>Google Forms</span>
         </p>
         <p>
-          <a class='btn btn-primary' disabled href='#'
+          <a class='btn btn-primary' disabled='disabled' href='#'
           target='_blank' role="button">Survey</a>
           <span class="text-danger">The Survey is not available at this point in time.</span>
         </p>
@@ -1562,8 +1574,7 @@
             to the Associate Vice Chancellor for Student Affairs, the Associate Directory of Records and Registration,
             the Dean of the College of IS&T and the chair of both the computer science department and your major's
             department, and possibly the pursuance of your dismissal from the University.
-            </strong>Further the instructor may apply a score penalty of 0 to -100 to the overall class score,
-            depending on the severity of the plagiarism.</strong>
+            <strong>Further the instructor may apply a score penalty of 0 to -100 to the overall class score, depending on the severity of the plagiarism.</strong>
           </li>
           <li>
             If you are suspected of submitting or enabling a plagiarized assignment, you will have the opportunity
@@ -1643,6 +1654,131 @@
               web-developer and has a special interest in developing Browser-Games.
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALS -->
+
+  <!-- Lecture 5 -->
+  <div class="modal fade" id="prog5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Lecture 5</h4>
+        </div>
+        <div class="modal-body">
+          <h4>Agenda</h4>
+          <ul>
+            <li>horizontal lists</li>
+            <li>CSS Basic Styling : colors, font-size, font-family, background-co</li>
+            <li>CSS Positioning: margin, padding, width, height</li>
+            <li>CSS pseudo-selectors - :hover</li>
+            <li>style attribute vs .css file</li>
+            <li>Assignment 0 (optional)</li>
+            <li>Assignment 1</li>
+            <li>Assignment 2</li>
+          </ul>
+          <h4>Assignment 0 - organize your private repository</h4>
+          <p>your workspace should have the following structure:</p>
+          <table class='table table-condensed table-striped'>
+            <thead>
+              <tr>
+                <th colspan='2'>Path</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan='2'><strong>class/</strong></td>
+                <td>this folder you can structure however you like.
+                I suggest making a subfolder for each class and collect your
+                in-class assignments in there.</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>1/</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>5/</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>6/</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan='2'><strong>assignments/</strong></td>
+                <td>the structure of this folder is mandatory!</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>website_htmlcss/</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>website_bootstrap/</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>js_assignment/</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>js_game/</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>README.md</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <h4>Assignment 1 - Style your Menu</h4>
+          <ul>
+            <li>copy the code you created for the 4 page website from last time.<br>
+                if you don't have this code anymore then you can copy the files from my
+                repository : <em>downloads/sample_projects/4/4_page_layout_with_menu</em></li>
+            <li>Put the menu into a &lt;div> and the rest of the page content (heading) into
+                another div</li>
+            <li>turn the menu into a stylish vertical menu using background color,
+                new fonts and bold / italic. Style it in a way you like it.</li>
+            <li>make sure the div (menu) has a height of 20 px. each menu item
+                should span 25% of the screen.</li>
+            <li>Retitle and adjust all proper elements (title, heading, menu items):
+              <ul>
+                <li>Home: Description of your page</li>
+                <li>page1: Blog</li>
+                <li>page2: Foto Gallery</li>
+                <li>page3: Contact information</li>
+              </ul>
+              <em>Ensure you don't change the menulinks(src) or rename the files!</em>
+            </li>
+          </ul>
+
+          <h4>Assignment 2 - Our first picture gallery</h4>
+          <ul>
+            <li>create a picture gallery on page2
+              <ul>
+                <li>use a table and image of equal size, (use google search - advanced   searchtools to specify to look only for images with a certain height and width)</li>
+                <li>have at least 12 images</li>
+              </ul>
+            </li>
+            <li>Ensure pictures are displayed all with equal size and height</li>
+            <li>use the css attributes you learned to impove the visual appearance of your gallery</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
