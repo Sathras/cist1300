@@ -1,0 +1,8 @@
+
+body > div > p {
+    background-color: gray;
+}
+
+p {
+    background-color: blue !important;
+}
