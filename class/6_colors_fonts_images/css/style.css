@@ -1,0 +1,47 @@
+@font-face {
+    font-family: ourfont;
+    src: url(raidercrusadrer.ttf);
+}
+
+h1 {
+    font-family: ourfont, Verdana;
+}
+
+
+div {
+    margin:15px;
+    padding:15px;
+    background-color:yellow;
+    position: relative;
+
+}
+
+div > div {
+    background-color:green;
+}
+
+div > div > div {
+
+    /* color using hexcode */
+    background-color:#FFFFFF;
+
+    /* color using RGB */
+    background-color:RGB(255,0,0);
+
+    /* color using RGBA (RGB with alpha(transparency) channel) */
+    background-color:RGBA(255,0,0, 0.5);
+}
+
+
+/* example for a gradient see http://www.colorzilla.com/gradient-editor/ */
+body {
+    background: rgb(240,183,161);
+    background: -moz-linear-gradient(top, rgba(240,183,161,1) 0%, rgba(140,51,16,1) 50%, rgba(117,34,1,1) 51%, rgba(191,110,78,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(240,183,161,1) 0%,rgba(140,51,16,1) 50%,rgba(117,34,1,1) 51%,rgba(191,110,78,1) 100%);
+    background: linear-gradient(to bottom, rgba(240,183,161,1) 0%,rgba(140,51,16,1) 50%,rgba(117,34,1,1) 51%,rgba(191,110,78,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 );
+}
+
+body {
+    background-image: url("../images/bg.jpg");
+}

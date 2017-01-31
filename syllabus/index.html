@@ -285,7 +285,12 @@
             <tr>
               <td>7</td>
               <td>01/31</td>
-              <td>Organizing HTML & CSS<br><small>Classes, IDs & Divs</small></td>
+              <td>
+                <button type="button" class="btn btn-info btn-xs"
+                  data-toggle="modal" data-target="#prog7">
+                  <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                </button>
+                <strong>Organizing HTML & CSS</strong><br><small>Classes, IDs & Divs, Borders and Psydo elements</small></td>
               <td>
                 <span class="label label-primary">Tutorial: Learn HTML/CSS Unit 5 (10)</span>
                 <span class="label label-danger">Website ReadMe (20)</span>
@@ -1865,6 +1870,63 @@
     </div>
   </div>
 
+  <!-- Lecture 7 -->
+  <div class="modal fade" id="prog7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel5">Lecture 7 - ID's, Classes and CSS</h4>
+        </div>
+        <div class="modal-body">
+          <h4>Agenda</h4>
+          <ul>
+            <li>
+              Tutorial Wrap up: ID's and Classes
+            </li>
+            <li>Border and different position parameters</li>
+            <li>Psydo elements<br />[:visited, :hover, :active, :first-child, :last-child, :even, :odd, :nth-child(x)]</li>
+          </ul>
+
+          <h4>Assignment 1 - IDs and Classes</h4>
+          <ul>
+            <li>Create CSS code for turning links into buttons based on a 'btn' class.</li>
+            <li>If elements have both a class 'btn' and a class 'btn-info', ensure the button is colored blue! Add some more color classes</li>
+          </ul>
+
+          <h4>Assignment 2 - Borders and Colors</h4>
+          <ul>
+            <li>Replicate these elements: using only a div element and some css:<br>
+              <div style="width:50px; height:50px; border-top: 25px solid green; border-left: 25px solid yellow; border-right: 25px solid red; border-bottom: 25px solid blue; margin-right: 15px; float: left;"></div>
+              <div style="width:50px; height:50px; border-top: 25px solid green; border-left: 25px solid yellow; border-right: 25px solid red; border-bottom: 25px solid blue; margin-right: 15px; float: left; border-radius:25px;"></div>
+              <div style="width:50px; height:50px; border: 5px dashed black;  margin-right: 15px; float: left;"></div>
+              <div style="width:50px; height:50px; border: 5px double black;  margin-right: 15px; float: left; border-radius:25px;"></div>
+              <div style="clear:both;"></div>
+            </li>
+          </ul>
+
+          <h4>Assignment 3 - Changing elements dynamically</h4>
+          <ul>
+            <li>Create a gray, square button with vertically and horizontally centered text and a border. The text should say: "My name is..."</li>
+            <li>Upon hovering, the button should:
+            <ul>
+              <li>Change the cursor to a pointer</li>
+              <li>turn the square into a round button</li>
+              <li>color the background black and the text white</li>
+              <li>replace the text with "... [my name]" <strong>Challenging!</strong></li>
+            </ul>
+            </li>
+          </ul>
+          <h4>Quiz 1 - HTML/CSS</h4>
+          <p>The quiz will be in-class during the last 20 minutes of the lecture. <br/>
+            <i>Once finished please remain seated in silence or, if you have to leave, be extremely silent to not disturb others who are still working.</i></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Latest compiled and minified JavaScript -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
