@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Title</title>
+        <style type="text/css" rel="stylesheet">
+
+            .btn {
+                display:inline-block;
+                height:200px;
+                line-height:200px;
+                width: 200px;
+                background-color:#AAA;
+                border: 1px solid black;
+                text-align: center;
+                vertical-align:middle;
+            }
+
+            .btn .normal {display:inline;}
+            .btn .over {display:none;}
+
+            .btn:hover {
+                background-color:black;
+                color:white;
+                border-radius:100%;
+            }
+
+
+            .btn2 {
+                display:inline-block;
+                height:200px;
+                line-height:200px;
+                width: 200px;
+                background-color:#AAA;
+                border: 1px solid black;
+                text-align: center;
+                vertical-align:middle;
+            }
+            .btn2:before {
+                content:"Mouse over me...";
+            }
+
+            .btn2:hover {
+                background-color:black;
+                color:white;
+                border-radius:100%;
+            }
+            .btn2:hover:before {
+                content:"there you go...";
+            }
+
+
+            .btn:hover .normal {display:none;}
+            .btn:hover .over {display:inline;}
+
+        </style>
+    </head>
+    <body>
+        <div class='btn'>
+            <span class='normal'>Mouse over me...</span>
+            <span class='over'>there you go...</span>
+
+        </div>
+
+        <div class='btn2'></div>
+    </body>
+</html>
