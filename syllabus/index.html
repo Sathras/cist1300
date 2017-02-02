@@ -302,7 +302,13 @@
             <tr>
               <td>8</td>
               <td>02/02</td>
-              <td>CSS - The Box Model<br><small>Content, Margins, Paddings, Borders</small></td>
+              <td>
+                <button type="button" class="btn btn-info btn-xs"
+                  data-toggle="modal" data-target="#prog8">
+                  <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                </button>
+                <strong>CSS - The Box Model</strong><br><small>Content, Margins, Paddings, Borders</small>
+              </td>
               <td><span class="label label-primary">Tutorial: Learn HTML/CSS Unit 6 (10)</span></td>
               <td>10</td>
               <td>140</td>
@@ -1508,26 +1514,26 @@
             <tr>
               <td>Blackboard</td>
               <td>Announcements, Quizzes, aquire student ID number</td>
-              <td>Quizzes, Course Evaluation</td>
+              <td>quizzes, course evaluation</td>
             </tr>
             <tr>
               <td>Instructor's public Cloud9 Environment (cist1300)</td>
-              <td>Class Materials</td>
+              <td>class materials & exercises</td>
               <td>-</td>
             </tr>
             <tr>
               <td>Instructor's public Cloud9 Environment (cist1300-class)</td>
-              <td>In-Class group participation & assignments</td>
+              <td>group participation & exercises (if needed)</td>
               <td>-</td>
             </tr>
             <tr>
               <td>Student's private Cloud9 Environment (assignments)</td>
-              <td>Code Assignments, individual learning space</td>
-              <td>All coding assignments</td>
+              <td>assignments, individual learning</td>
+              <td>Assignments</td>
             </tr>
             <tr>
               <td>Code Academy</td>
-              <td>Class preparation, individual learning</td>
+              <td>class preparation, individual learning</td>
               <td>Tutorials</td>
             </tr>
           </tbody>
@@ -1913,7 +1919,7 @@
 
           <h4>
             Exercise 3 - Changing elements dynamically
-            <a type="button" href='../class/7_id_class_border_hover/exercise_2.html' target='_blank' class="btn pull-right btn-xs btn-info"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> See Example</a>
+            <a type="button" href='../class/7_id_class_border_hover/exercise_3.html' target='_blank' class="btn pull-right btn-xs btn-info"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> See Example</a>
           </h4>
           <ul>
             <li>Create a gray, square button with vertically and horizontally centered text and a border. The text should say: "My name is..."</li>
@@ -1929,6 +1935,64 @@
           <h4>Quiz 1 - HTML/CSS</h4>
           <p>The quiz will be in-class during the last 20 minutes of the lecture. <br/>
             <i>Once finished please remain seated in silence or, if you have to leave, be extremely silent to not disturb others who are still working.</i></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lecture 8 -->
+  <div class="modal fade" id="prog8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel8">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel5">Lecture 8 - The Box Model</h4>
+        </div>
+        <div class="modal-body">
+          <h4>Agenda</h4>
+          <ul>
+            <li>Quiz 1 - WrapUp</li>
+            <li>Tutorial Wrap up: Divs, Positioning, Borders and Content</li>
+            <li>Exercise 1 - A centered Box</li>
+            <li>Exercise 2 - A scrolling Box</li>
+            <li>Exercise 3 - A fancy Box</li>
+          </ul>
+
+          <h4>
+            Exercise 1 - A centered Box
+            <a type="button" href='../class/8_box_model/exercise_1.html' target='_blank' class="btn pull-right btn-xs btn-info"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> See Example</a>
+          </h4>
+          <ul>
+            <li>Create a Box (600 x 400 px) with a gray background (#AAAAAA) and 25px padding.</li>
+            <li>Find a way to position the box directly in the screen center.</li>
+          </ul>
+
+          <h4>
+            Exercise 2 - A scrolling Box
+            <a type="button" href='../class/8_box_model/exercise_2.html' target='_blank' class="btn pull-right btn-xs btn-info"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> See Example</a>
+          </h4>
+          <ul>
+            <li>Copy the html file you created in the previous exercise to expand upon it in a new file with out altering the original.</li>
+            <li>Add enough <a href="http://generator.lorem-ipsum.info/_latin" target="_blank">Sample content</a> inside the box so the content won't fit.</li>
+            <li>Explore all <a href="http://www.w3schools.com/css/css_overflow.asp" target='_blank'>overflow options</a> you have</li>
+            <li><strong>Challenge:</strong> figure out a way to cut all text in a paragraph once it reaches the end of the line and replace the rest with ... (Hint: Css provides an option for that)</li>
+          </ul>
+
+          <h4>
+            Exercise 3 - A fancy Box <strong>Challenging!</strong>
+            <a type="button" href='../class/8_box_model/exercise_3.html' target='_blank' class="btn pull-right btn-xs btn-info"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> See Example</a>
+          </h4>
+          <ul>
+            <li>Copy the html file you created in exercise 1 to expand upon it in a new file with out altering the original.</li>
+            <li>Change the size of the box to 1048px x variable height (content dependent). Ensure the box has a minimum height of 900px.</li>
+            <li>Change padding top and bottom to 320px, padding left and right to 25px</li>
+            <li>Show the corner image correctly in each corner. Hint: you can turn an image by 90, 180 or 270 degrees using css!</li>
+            <li>Repeat the edge.gif image along each edge to finish the box.</li>
+            <li>Enjoy your beautiful oldschool box with image border</li>
+          </ul>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
