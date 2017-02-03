@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Exercise</title>
-        <style type="text/css" rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise</title>
+    <style type="text/css" rel="stylesheet">
 
-        </style>
-    </head>
-    <body>
+      #box {
+        position: absolute;
+        width:600px;
+        height:400px;
+        background-color:#AAAAAA;
+        margin-left:-300px;
+        margin-top:-200px;
+        top:50%;
+        left:50%;
 
-    </body>
+        /* border image all in this element */
+
+        border: 15px double black;
+        /* must set 'border' shorthand first, otherwise it erases 'border-image' */
+        border-image: url(images/edge.gif) 100% 100% fill;
+        border-width: 28px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id='box'></div>
+  </body>
 </html>
