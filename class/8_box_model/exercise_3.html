@@ -9,24 +9,72 @@
         position: absolute;
         width:600px;
         height:400px;
-        background-color:#AAAAAA;
+        background-color:#FFF;
         margin-left:-300px;
         margin-top:-200px;
         top:50%;
         left:50%;
+      }
+      #box div { position:absolute; }
 
-        /* border image all in this element */
+      .edge-h { height: 10px; width: 100%; left:0; background-size:contain;}
+      .edge-v { width:  10px; height: 100%; top:0; background-size:contain;}
 
-        border: 15px double black;
-        
-        /* must set 'border' shorthand first, otherwise it erases 'border-image' */
-        border-image: url(images/edge.gif) 100% 100% stretch;
-        border-width: 28px;
+      .edge-t { top:0;      background-image: url(images/edge-top.gif);     }
+      .edge-b { bottom:0;   background-image: url(images/edge-bottom.gif);  }
+      .edge-l { left:0;     background-image: url(images/edge-left.gif);    }
+      .edge-r { right:0;    background-image: url(images/edge-right.gif);   }
+
+      .corner {
+        width: 100px;
+        height: 100px;
+        background-size: contain;
+        background-image:url(images/corner.jpg);
+      }
+      .corner-tl {
+        top:0;
+        left:0;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform:    rotate(-90deg);
+        -ms-transform:     rotate(-90deg);
+        -o-transform:      rotate(-90deg);
+        transform:         rotate(-90deg);
+      }
+      .corner-tr {
+        top:0;
+        right:0;
+      }
+      .corner-bl {
+        bottom:0;
+        left:0;
+        -webkit-transform: rotate(180deg);
+        -moz-transform:    rotate(180deg);
+        -ms-transform:     rotate(180deg);
+        -o-transform:      rotate(180deg);
+        transform:         rotate(180deg);
+      }
+      .corner-br {
+        bottom:0;
+        right:0;
+        -webkit-transform: rotate(90deg);
+        -moz-transform:    rotate(90deg);
+        -ms-transform:     rotate(90deg);
+        -o-transform:      rotate(90deg);
+        transform:         rotate(90deg);
       }
 
     </style>
   </head>
   <body>
-    <div id='box'></div>
+    <div id='box'>
+      <div class='edge-h edge-t'></div>
+      <div class='edge-v edge-l'></div>
+      <div class='edge-h edge-b'></div>
+      <div class='edge-v edge-r'></div>
+      <div class='corner corner-tl'></div>
+      <div class='corner corner-tr'></div>
+      <div class='corner corner-bl'></div>
+      <div class='corner corner-br'></div>
+    </div>
   </body>
 </html>
