@@ -1,12 +1,30 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>Exercise - Chess</title>
         <style type="text/css" rel="stylesheet">
 
+            #chessboard {
+                width:500px;
+                height:500px;
+            }
+
+            @media (orientation:landscape){
+                #chessboard {
+                    background-color:red;
+                }
+            }
+            @media (orientation : portrait){
+                #chessboard {
+                    background-color:blue;
+                }
+            }
+
         </style>
     </head>
     <body>
-
+      <div id='chessboard'>
+      </div>
     </body>
 </html>

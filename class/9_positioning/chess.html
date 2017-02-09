@@ -5,9 +5,130 @@
         <title>Exercise - Chess</title>
         <style type="text/css" rel="stylesheet">
 
+          body {
+            background: rgb(136,191,232);
+            background: -moz-linear-gradient(-45deg,  rgba(136,191,232,1) 0%, rgba(117,148,234,1) 100%);
+            background: -webkit-linear-gradient(-45deg,  rgba(136,191,232,1) 0%,rgba(117,148,234,1) 100%);
+            background: linear-gradient(135deg,  rgba(136,191,232,1) 0%,rgba(117,148,234,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88bfe8', endColorstr='#7594ea',GradientType=1 );
+
+          }
+
+
+          #chessboard {
+            background-color: white;
+            position:absolute;
+            width:600px;
+            height:600px;
+            left:50%;
+            top:50%;
+            margin-left:-300px;
+            margin-top:-300px;
+            border: 5px solid black;
+
+            -webkit-box-shadow: 10px 10px 75px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 75px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 75px 0px rgba(0,0,0,0.75);
+          }
+
+          #chessboard > div > div {
+            width: 75px;
+            height: 75px;
+            float: left;
+            font-size: 70px;
+            text-align: center;
+            vertical-align: middle;
+            line-height:75px;
+          }
+
+          #chessboard > div:nth-of-type(even) > div:nth-of-type(odd),
+          #chessboard > div:nth-of-type(odd)  > div:nth-of-type(even) {
+            background-color: gray;
+          }
         </style>
     </head>
     <body>
-
+      <div id='chessboard'>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div>
+          <div>&#9817;</div>
+          <div>&#9817;</div>
+          <div>&#9817;</div>
+          <div>&#9817;</div>
+          <div>&#9817;</div>
+          <div>&#9817;</div>
+          <div>&#9817;</div>
+          <div>&#9817;</div>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
     </body>
 </html>
