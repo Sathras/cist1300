@@ -1,5 +1,5 @@
 <?php
-  if ($_GET["name"]){
+  if ($_REQUEST["name"]){
     echo "Welcome ". $_GET['name']. "<br />";
     echo "You are ". $_GET['age']. " years old.<br />";
     echo "You did send this data via GET.";
