@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Exercise 11.1</title>
-        <style type="text/css" rel="stylesheet">
 
-        </style>
-    </head>
-    <body>
+<head>
+  <meta charset="utf-8">
+  <title>Exercise 11.1</title>
+  <style type="text/css" rel="stylesheet">
+    table {
+      width:80%;
+      max-width:800px;
+    }
+    td {
+      width:50%;
+      height:30px;
+    }
+    input, textarea {
+      width:100%;
+    }
+    textarea {
+      height:90px;
+    }
+    .right {
+      text-align:right;
+    }
+    label {
+      width:100%;
+      overflow:hidden;
+    }
+  </style>
+</head>
 
-    </body>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th colspan='2'><h3>Awesome Form</h3></th>
+      </tr>
+    </thead>
+    <tr>
+      <td class='right'>First Name</td>
+      <td><input type='text' placeholder='please fill out' /></td>
+    </tr>
+    <tr>
+      <td class='right'>Last Name</td>
+      <td><input type='text' placeholder='please fill out' /></td>
+    </tr>
+    <tr>
+      <td><input type='checkbox' /> Mark this</td>
+      <td rowspan='3'><textarea  placeholder="optional"></textarea></td>
+    </tr>
+    <tr>
+      <td><label><input type='checkbox' /> Mark this</label></td>
+    </tr>
+    <tr>
+      <td><label><input type='checkbox' /> Mark this</label></td>
+    </tr>
+  </table>
+</body>
+
 </html>
