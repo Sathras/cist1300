@@ -1,0 +1,30 @@
+.logo {
+    position: absoulte;
+    float: left;
+    color: green;
+    font-size: 25px;
+}
+nav li {
+    float: left;
+    color: green;
+    border: green solid;
+    font-size: 20px;
+    display: inline-block;
+    height: 15%;
+    width: 15%;
+    
+}
+* {
+    background-color: grey;
+}
+.content {
+    
+    
+}
+h1 {
+    font-size: 50px;
+    display: inline-block;
+    height: 50%;
+    
+    
+}

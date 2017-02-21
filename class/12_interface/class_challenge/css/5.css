@@ -1,0 +1,21 @@
+@font-face {
+font-family: hello;
+}
+    
+.logo   { 
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 2.0px 2.0px #fff;
+    font-weight: bold;
+    text-align: center;
+    }
+    
+    
+    
+body {
+      background-image: url("https://static.pexels.com/photos/87646/horsehead-nebula-dark-nebula-constellation-orion-87646.jpeg");
+      color: white;
+      font-family: hello;
+}
+
+

@@ -1,0 +1,24 @@
+body {
+    background-image: url("http://i.imgur.com/a1tKXwW.jpg");
+    
+}
+
+h1 {
+    font-family: Impact;
+    color: #FF6F00;
+    font-size: 75px;
+    
+    
+}
+
+#content {
+    color: #FAFAFA;
+    font-size: 20px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+

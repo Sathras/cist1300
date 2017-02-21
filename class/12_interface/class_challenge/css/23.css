@@ -1,0 +1,15 @@
+body {
+  background-color:black;
+  color: black;
+
+
+  background: #110306; /* Old Browsers */
+background: -webkit-radial-gradient(center,#110306,#ffffc7); /*Safari 5.1-6*/
+background: -o-radial-gradient(center,#110306,#ffffc7); /*Opera 11.1-12*/
+background: -moz-radial-gradient(center,#110306,#ffffc7); /*Fx 3.6-15*/
+background: radial-gradient(ellipse at center, #110306, #ffffc7); /*Standard*/
+}
+
+#content {
+    width:25%;
+}

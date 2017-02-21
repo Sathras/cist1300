@@ -1,0 +1,55 @@
+@font-face {
+  font-family: planetium;
+  src: url(../fonts/33/planetium-x Regular Demo.otf);
+}
+
+* {box-sizing: border-box;}
+
+
+body {
+  font-family: planetium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#E5E5E5;
+  background:#091932 url("/interface/fonts/33/heic1509a.jpg") top left no-repeat;
+  background-size: cover;
+  padding: 70px 0;
+  min-width: 992px;
+  height:100%;
+}
+
+h1, .logo {
+  text-align:center;
+  font-size: 40px;
+  text-transform: uppercase;
+  background:  -webkit-linear-gradient(top, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+a:link, a:visited { color:#f0cf62; text-decoration: none; }
+a:hover {color:#ff7f7f; }
+#content {
+  padding:25px;
+  min-width:1024px;
+  max-width:1600px;
+  margin: 0 auto;
+  left:-50%;
+  text-align: justify;
+  text-align-last: center;
+}
+
+#copyright {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  min-width:1024px;
+  width:100%;
+
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 75, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 75%,rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 75%,rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+
+  font-size: 80%;
+  color: #898989;
+}

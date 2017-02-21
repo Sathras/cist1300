@@ -1,0 +1,56 @@
+nav {
+    color:red;
+    width:740px;
+    margin:auto;
+    margin-top:30px;
+}
+nav a.logo{
+    border:1px solid black;
+    display:block;
+    width:200px;
+    float:left;
+    text-align:center;
+    margin-right:40px;
+    margin-left:6px;
+    text-decoration: none;
+    
+}
+nav a.logo:hover{
+    background-color:rgba(155,70,40,7);
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    
+}
+nav ul li a {
+    display: block;
+    width: 150px;
+    border:1px solid black;
+    float:left;
+    padding: 5px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color:rgba(255,180,40,7);
+}
+h1{
+    clear:both;
+}
+
+
+/*--- copyright ---*/
+div#copyright{
+    border:1px solid black;
+    text-align:center;
+}
+
+div#base{
+    border:2px solid black;
+    width:800px;
+    margin:auto;
+    background: url("../images/nebula.jpg");
+}

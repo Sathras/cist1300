@@ -1,0 +1,16 @@
+h1 {
+    font: blue;
+    font-size: 200px;
+    position: relative;
+    
+}
+
+p {
+    font-size: 20px;
+}
+
+background {
+    background-image: url(https://img.buzzfeed.com/buzzfeed-static/static/2014-07/11/15/campaign_images/webdr10/21-screaming-birds-2-14691-1405106854-20_dblbig.jpg);
+    background-repeat: repeat-y;
+    background-color: purple;
+}

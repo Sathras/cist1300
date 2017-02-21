@@ -1,0 +1,18 @@
+.body {
+    background-color: blue
+    font-size: 12pt;
+    border: 2px black;
+}
+.content {
+    float: middle;
+    font-size: 12pt;
+}
+.copyright {
+    font-size:; 12px;
+    float: right;
+}
+h1 {
+    font-size: 24pt;
+    text-align: center;
+}
+//add picture(s) first

@@ -1,0 +1,48 @@
+body {
+    background: url("../images/space42.jpg");
+    background-size:cover
+}
+p {
+    font-size: 20px;
+}
+nav > a {
+    font-family: Copperplate;
+    text-decoration: none;
+    font-size: 20px;
+    color: red;
+    float: left;
+    margin: 5px 10px;
+}
+
+nav {
+    background: rgba(24,40,149,1);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(10,8,9,1) 0%,rgba(10,8,9,1) 0%,rgba(10,14,10,1) 18%,rgba(110,119,116,1) 41%);
+}
+
+li {
+    float: left;
+    border-right: 1px solid white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: gray;
+}
+
+.active {
+    background-color: red;
+}

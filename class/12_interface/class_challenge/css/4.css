@@ -1,0 +1,58 @@
+h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-family: myFirstFont;
+}
+
+body {
+    background: #B8DCE6;
+    background-repeat: repeat-y;
+}
+
+.logo {
+    color: -webkit-linear-gradient(#eee, #333);
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+
+#content {
+    display: block;
+    margin:0 auto;
+    width: 80%;
+}
+
+#copyright { 
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    border-top:2px solid #eee;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(recharge.ttf);
+}
+
+ul { 
+    list-style:none; 
+    text-align:center; 
+    border-top:2px solid #eee; 
+    border-bottom:2px solid #eee; 
+    padding:10px 0; 
+    
+}
+ ul li { 
+     display:inline; 
+     text-transform:uppercase; 
+     padding:0 10px; 
+     letter-spacing:8px; 
+ }

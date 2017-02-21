@@ -1,0 +1,25 @@
+.logo{
+    float:left;
+}
+.content{ 
+    border: 1px blue solid;
+    color: navy;
+    font: serif, white, bold;
+}
+
+.menu{
+    display:inline-block
+    float: right;
+}
+
+.copyright { font: 10px;
+}
+
+.background{
+    background: #b5bdc8; /* Old browsers */
+background: -moz-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #b5bdc8 0%,#828c95 36%,#28343b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #b5bdc8 0%,#828c95 36%,#28343b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
+copy
+}

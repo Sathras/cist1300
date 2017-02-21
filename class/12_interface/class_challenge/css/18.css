@@ -1,0 +1,40 @@
+body {
+    background-image:url(../images/bg-2-full.jpg);
+}
+
+h1 {
+   text-align: center;
+   color: white;
+   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+   font-size: 50px;
+   font-style: normal;
+   font-variant: normal;
+   font-weight: 500;
+   line-height: 26.4px;
+}
+
+nav li{
+    display: inline;
+    float: left;
+    margin-left: 5px;
+
+}
+
+#copyright {
+    text-align: center;
+    float: bottom;
+}
+
+p, a, span {
+    color: white;
+}
+
+p {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+   font-size: 18px;
+   font-style: normal;
+   font-variant: normal;
+   font-weight: 500;
+   line-height: 26.4px;
+}
+

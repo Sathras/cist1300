@@ -1,0 +1,48 @@
+body {
+    
+    background-image:url("http://a1star.com/images/star--background-seamless-repeating5.jpg");
+    /* Image found at http://a1star.com/images/star--background-seamless-repeating5.jpg
+    License: https://creativecommons.org/licenses/by/2.0/ */
+    
+}
+
+div {
+    
+    color:white;
+    
+}
+
+h1 {
+   font-family: "SpaceAge"; 
+   color:yellow;
+   text-align:center; 
+    
+}
+
+.logo {
+    
+   font-family: "SpaceAge"; 
+   color:yellow !important; 
+    
+}
+
+li {
+    display: inline;
+    font-family:"SpaceAge";
+}
+
+
+@font-face {
+    font-family: SpaceAge;
+    src: url(../fonts/spaceage.ttf);
+}
+
+a:link {
+color: #CC0000;
+}
+a:visited {
+color: #999999;
+}
+a:hover {
+color: #FF3300;
+}

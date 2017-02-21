@@ -1,0 +1,22 @@
+body {
+    background-image: url("http://static-cdn1.ustream.tv/i/channelcover/6540154,orig,r:2.jpg");
+    background-color: #B7B7B7;
+}
+
+h1 {
+    text-align:center;
+}
+
+.content, .copyright {
+    font-family:georgia;
+}
+
+a:link, a:visited {
+    background-color: #4F4F4F;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
