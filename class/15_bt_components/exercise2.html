@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Exercise 2 - Tabs & Progressbar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+<body>
+
+<div class="container">
+
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#start" aria-controls="start" role="tab" data-toggle="tab">Start</a></li>
+    <li role="presentation"><a href="#demographics" aria-controls="demographics" role="tab" data-toggle="tab">Demographics</a></li>
+    <li role="presentation"><a href="#experience" aria-controls="experience" role="tab" data-toggle="tab">Experience</a></li>
+    <li role="presentation"><a href="#suggestions" aria-controls="suggestions" role="tab" data-toggle="tab">Settings</a></li>
+    <li role="presentation"><a href="#complete" aria-controls="complete" role="tab" data-toggle="tab">Complete</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="container tab-content">
+    <div role="tabpanel" class="tab-pane active" id="start">
+      <h2>The Science Survey</h2>
+      <div class='well text-justify'>This survey is intended to test your knowledge about the universe.<br>
+      By completing this survey you understand and agree to that your personal data will be used for marketing purposes and sold to goverment agencies. Should you come up with an amazing theory on how the universe came, you agree that we will steal it from you and pretend it is ours. Have fun!</div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="demographics">
+      <h2>Demographics</h2>
+      <div class='well'>
+
+        <p>Well, we are not really interested in your race, sexual orientiation or education level but...</p>
+
+        <h4>Primary Email</h4>
+        <input type="email" class="form-control" placeholder="For spam">
+
+        <h4>Secondary Email</h4>
+        <input type="email" class="form-control" placeholder="For more spam">
+
+        <h4>Tertiary Email</h4>
+        <input type="email" class="form-control" placeholder="In case your spam filters can't be pierced">
+
+        <h4>Your phone number</h4>
+        <input type="text" class="form-control" placeholder="So we can sell you our products on the phone!">
+
+        <h4>Your address</h4>
+        <input type="text" class="form-control" placeholder="Good old print advertisment has no spam filter!">
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="experience">
+      <h2>Experience</h2>
+      <div class='well'>
+        <p>Failing to know correct answers in this section will result in even more spam from us! Also we won't even look at your theories in the next section.</p>
+        <h4>How old is the universe?</h4>
+        <input type="text" class="form-control" placeholder="Age in Billion years [xx.x]">
+
+        <h4>Aproximately how many stars are located in the local supercluster?</h4>
+        <input type="text" class="form-control" placeholder="in [x * 10^xxxxx]">
+
+        <h4>What is the major result of the Two-degree-Field Galaxy Redshift Survey released in 2003?</h4>
+        <input type="text" class="form-control" placeholder="Fill in text">
+
+        <h4>Under what circumstances can space-time be bend when exposed to a dark matter Mass-to-Light Paradox?</h4>
+        <input type="text" class="form-control" placeholder="You won't get this one...">
+
+
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="suggestions">
+      <h2>Suggestions</h2>
+      <div class='well'>
+        <h4>What is your theory how life came into existance?</h4>
+        <textarea class="form-control" rows="3"></textarea>
+        <h4>How does it look like inside a black hole?</h4>
+        <textarea class="form-control" rows="3"></textarea>
+        <h4>What happened, in your opinion before the Big Bang?</h4>
+        <textarea class="form-control" rows="3"></textarea>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="complete">
+      <h2>Finished!</h2>
+      <div class='well'>Many thanks for your consent and data! We will put it to good use! Hrhrhr...</div>
+    </div>
+  </div>
+
+
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
