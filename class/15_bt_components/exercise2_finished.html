@@ -11,25 +11,28 @@
 
 <div class="container">
 
-
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#start" aria-controls="start" role="tab" data-toggle="tab">Start</a></li>
-    <li role="presentation"><a href="#demographics" aria-controls="demographics" role="tab" data-toggle="tab">Demographics</a></li>
-    <li role="presentation"><a href="#experience" aria-controls="experience" role="tab" data-toggle="tab">Experience</a></li>
-    <li role="presentation"><a href="#suggestions" aria-controls="suggestions" role="tab" data-toggle="tab">Settings</a></li>
-    <li role="presentation"><a href="#complete" aria-controls="complete" role="tab" data-toggle="tab">Complete</a></li>
-  </ul>
-
   <!-- Tab panes -->
   <div class="container tab-content">
     <div role="tabpanel" class="tab-pane active" id="start">
       <h2>The Science Survey</h2>
+      <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="0"
+        aria-valuemin="0" aria-valuemax="100" style="width:0%">
+        </div>
+      </div>
       <div class='well text-justify'>This survey is intended to test your knowledge about the universe.<br>
       By completing this survey you understand and agree to that your personal data will be used for marketing purposes and sold to goverment agencies. Should you come up with an amazing theory on how the universe came, you agree that we will steal it from you and pretend it is ours. Have fun!</div>
+      <a href='#demographics' aria-controls="demographics" role="tab" data-toggle="tab" class="btn btn-primary pull-right">Next <span class='glyphicon glyphicon-forward'></span></a>
     </div>
     <div role="tabpanel" class="tab-pane" id="demographics">
       <h2>Demographics</h2>
+
+      <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="25"
+        aria-valuemin="0" aria-valuemax="100" style="width:25%">
+          25% Complete
+        </div>
+      </div>
       <div class='well'>
 
         <p>Well, we are not really interested in your race, sexual orientiation or education level but...</p>
@@ -49,9 +52,17 @@
         <h4>Your address</h4>
         <input type="text" class="form-control" placeholder="Good old print advertisment has no spam filter!">
       </div>
+      <a href='#start' aria-controls="start" role="tab" data-toggle="tab" class="btn btn-default pull-left"><span class='glyphicon glyphicon-backward'></span> Back</a>
+      <a href='#experience' aria-controls="experience" role="tab" data-toggle="tab" class="btn btn-primary pull-right">Next <span class='glyphicon glyphicon-forward'></span></a>
     </div>
     <div role="tabpanel" class="tab-pane" id="experience">
       <h2>Experience</h2>
+      <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+        aria-valuemin="0" aria-valuemax="100" style="width:50%">
+          50% Complete
+        </div>
+      </div>
       <div class='well'>
         <p>Failing to know correct answers in this section will result in even more spam from us! Also we won't even look at your theories in the next section.</p>
         <h4>How old is the universe?</h4>
@@ -65,12 +76,18 @@
 
         <h4>Under what circumstances can space-time be bend when exposed to a dark matter Mass-to-Light Paradox?</h4>
         <input type="text" class="form-control" placeholder="You won't get this one...">
-
-
       </div>
+      <a href='#demographics' aria-controls="demographics" role="tab" data-toggle="tab" class="btn btn-default pull-left"><span class='glyphicon glyphicon-backward'></span> Back</a>
+      <a href='#suggestions' aria-controls="suggestions" role="tab" data-toggle="tab" class="btn btn-primary pull-right">Next <span class='glyphicon glyphicon-forward'></span></a>
     </div>
     <div role="tabpanel" class="tab-pane" id="suggestions">
       <h2>Suggestions</h2>
+      <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75"
+        aria-valuemin="0" aria-valuemax="100" style="width:75%">
+          75% Complete
+        </div>
+      </div>
       <div class='well'>
         <h4>What is your theory how life came into existance?</h4>
         <textarea class="form-control" rows="3"></textarea>
@@ -79,10 +96,19 @@
         <h4>What happened, in your opinion before the Big Bang?</h4>
         <textarea class="form-control" rows="3"></textarea>
       </div>
+      <a href='#experience' aria-controls="experience" role="tab" data-toggle="tab" class="btn btn-default pull-left"><span class='glyphicon glyphicon-backward'></span> Back</a>
+      <a href='#complete' aria-controls="complete" role="tab" data-toggle="tab" class="btn btn-primary pull-right">Next <span class='glyphicon glyphicon-forward'></span></a>
     </div>
     <div role="tabpanel" class="tab-pane" id="complete">
       <h2>Finished!</h2>
+      <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100"
+        aria-valuemin="0" aria-valuemax="100" style="width:100%">
+          100% Complete
+        </div>
+      </div>
       <div class='well'>Many thanks for your consent and data! We will put it to good use! Hrhrhr...</div>
+      <a href='#suggestions' aria-controls="suggestions" role="tab" data-toggle="tab" class="btn btn-default pull-left"><span class='glyphicon glyphicon-backward'></span> Back</a>
     </div>
   </div>
 
