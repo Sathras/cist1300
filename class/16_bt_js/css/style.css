@@ -21,3 +21,7 @@ p.font1 {
 p.font2 {
   font-family: 'Supermercado One', cursive;
 }
+
+.color-red {
+  color:red;
+}
