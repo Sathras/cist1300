@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>Exercise - Chess</title>
+      <link type="text/css" rel="stylesheet" href="css/chess.css" />
+  </head>
+  <body>
+    <div id='chessboard'>
+      <div data-row='8' data-col='1' class='cell-w piece-b tower'></div>
+      <div data-row='8' data-col='2' class='cell-b piece-b knight'></div>
+      <div data-row='8' data-col='3' class='cell-w piece-b bishop'></div>
+      <div data-row='8' data-col='4' class='cell-b piece-b queen'></div>
+      <div data-row='8' data-col='5' class='cell-w piece-b king'></div>
+      <div data-row='8' data-col='6' class='cell-b piece-b bishop'></div>
+      <div data-row='8' data-col='7' class='cell-w piece-b knight'></div>
+      <div data-row='8' data-col='8' class='cell-b piece-b tower'></div>
+
+      <div data-row='7' data-col='1' class='cell-b piece-b pawn'></div>
+      <div data-row='7' data-col='2' class='cell-w piece-b pawn'></div>
+      <div data-row='7' data-col='3' class='cell-b piece-b pawn'></div>
+      <div data-row='7' data-col='4' class='cell-w piece-b pawn'></div>
+      <div data-row='7' data-col='5' class='cell-b piece-b pawn'></div>
+      <div data-row='7' data-col='6' class='cell-w piece-b pawn'></div>
+      <div data-row='7' data-col='7' class='cell-b piece-b pawn'></div>
+      <div data-row='7' data-col='8' class='cell-w piece-b pawn'></div>
+
+      <div data-row='6' data-col='1' class='cell-w'></div>
+      <div data-row='6' data-col='2' class='cell-b'></div>
+      <div data-row='6' data-col='3' class='cell-w'></div>
+      <div data-row='6' data-col='4' class='cell-b'></div>
+      <div data-row='6' data-col='5' class='cell-w'></div>
+      <div data-row='6' data-col='6' class='cell-b'></div>
+      <div data-row='6' data-col='7' class='cell-w'></div>
+      <div data-row='6' data-col='8' class='cell-b'></div>
+
+      <div data-row='5' data-col='1' class='cell-b'></div>
+      <div data-row='5' data-col='2' class='cell-w'></div>
+      <div data-row='5' data-col='3' class='cell-b'></div>
+      <div data-row='5' data-col='4' class='cell-w'></div>
+      <div data-row='5' data-col='5' class='cell-b'></div>
+      <div data-row='5' data-col='6' class='cell-w'></div>
+      <div data-row='5' data-col='7' class='cell-b'></div>
+      <div data-row='5' data-col='8' class='cell-w'></div>
+
+      <div data-row='4' data-col='1' class='cell-w'></div>
+      <div data-row='4' data-col='2' class='cell-b'></div>
+      <div data-row='4' data-col='3' class='cell-w'></div>
+      <div data-row='4' data-col='4' class='cell-b'></div>
+      <div data-row='4' data-col='5' class='cell-w'></div>
+      <div data-row='4' data-col='6' class='cell-b'></div>
+      <div data-row='4' data-col='7' class='cell-w'></div>
+      <div data-row='4' data-col='8' class='cell-b'></div>
+
+      <div data-row='3' data-col='1' class='cell-b'></div>
+      <div data-row='3' data-col='2' class='cell-w'></div>
+      <div data-row='3' data-col='3' class='cell-b'></div>
+      <div data-row='3' data-col='4' class='cell-w'></div>
+      <div data-row='3' data-col='5' class='cell-b'></div>
+      <div data-row='3' data-col='6' class='cell-w'></div>
+      <div data-row='3' data-col='7' class='cell-b'></div>
+      <div data-row='3' data-col='8' class='cell-w'></div>
+
+      <div data-row='2' data-col='1' class='cell-w piece-w pawn'></div>
+      <div data-row='2' data-col='2' class='cell-b piece-w pawn'></div>
+      <div data-row='2' data-col='3' class='cell-w piece-w pawn'></div>
+      <div data-row='2' data-col='4' class='cell-b piece-w pawn'></div>
+      <div data-row='2' data-col='5' class='cell-w piece-w pawn'></div>
+      <div data-row='2' data-col='6' class='cell-b piece-w pawn'></div>
+      <div data-row='2' data-col='7' class='cell-w piece-w pawn'></div>
+      <div data-row='2' data-col='8' class='cell-b piece-w pawn'></div>
+
+      <div data-row='1' data-col='1' class='cell-b piece-w tower'></div>
+      <div data-row='1' data-col='2' class='cell-w piece-w knight'></div>
+      <div data-row='1' data-col='3' class='cell-b piece-w bishop'></div>
+      <div data-row='1' data-col='4' class='cell-w piece-w queen'></div>
+      <div data-row='1' data-col='5' class='cell-b piece-w king'></div>
+      <div data-row='1' data-col='6' class='cell-w piece-w bishop'></div>
+      <div data-row='1' data-col='7' class='cell-b piece-w knight'></div>
+      <div data-row='1' data-col='8' class='cell-w piece-w tower'></div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous">
+    </script>
+    <script type='text/javascript' src='js/chess.js'></script>
+  </body>
+</html>

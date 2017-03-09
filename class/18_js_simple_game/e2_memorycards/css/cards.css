@@ -1,0 +1,23 @@
+.card {
+  height:242px;
+  width:167px;
+  background-color: gray;
+  margin-right:10px;
+  margin-bottom:10px;
+  float:left;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.card.hidden { background-image: none !important; }
+
+.card1 { background-image: url(../img/2_of_clubs.svg); }
+.card2 { background-image: url(../img/4_of_hearts.svg); }
+.card3 { background-image: url(../img/jack_of_hearts.svg); }
+.card4 { background-image: url(../img/queen_of_clubs2.svg); }
+.card5 { background-image: url(../img/ace_of_diamonds.svg); }
+.card6 { background-image: url(../img/6_of_spades.svg); }
+.card7 { background-image: url(../img/7_of_diamonds.svg); }
+.card8 { background-image: url(../img/10_of_clubs.svg); }
+.card9 { background-image: url(../img/king_of_spades2.svg); }
+.card10 { background-image: url(../img/red_joker.svg); }

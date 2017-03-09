@@ -9,33 +9,36 @@
         <div id="calculator">
         	<!-- Screen and clear key -->
         	<div class="top">
-        		<span class="clear">C</span>
+        		<span class="clear" onClick='reset()'>C</span>
         		<div class="screen"></div>
         	</div>
 
         	<div class="keys">
         		<!-- operators and other keys -->
-        		<span>7</span>
-        		<span>8</span>
-        		<span>9</span>
-        		<span class="operator">+</span>
-        		<span>4</span>
-        		<span>5</span>
-        		<span>6</span>
-        		<span class="operator">-</span>
-        		<span>1</span>
-        		<span>2</span>
-        		<span>3</span>
-        		<span class="operator">÷</span>
-        		<span>0</span>
-        		<span>.</span>
-        		<span class="eval">=</span>
-        		<span class="operator">x</span>
+        		<span onClick='clickDigit(7)'>7</span>
+        		<span onClick='clickDigit(8)'>8</span>
+        		<span onClick='clickDigit(9)'>9</span>
+        		<span onClick='clickOperator("+")' class="operator">+</span>
+        		<span onClick='clickDigit(4)'>4</span>
+        		<span onClick='clickDigit(5)'>5</span>
+        		<span onClick='clickDigit(6)'>6</span>
+        		<span onClick='clickOperator("-")' class="operator">-</span>
+        		<span onClick='clickDigit(1)'>1</span>
+        		<span onClick='clickDigit(2)'>2</span>
+        		<span onClick='clickDigit(3)'>3</span>
+        		<span onClick='clickOperator("*")' class="operator">x</span>
+        		<span onClick='clickDigit(0)'>0</span>
+        		<span onClick='clickPeriod()'>.</span>
+        		<span onClick='calc()' class="eval">=</span>
+        		<span onClick='clickOperator("/")' class="operator">÷</span>
         	</div>
         </div>
 
-        <!-- PrefixFree -->
-        <script src="http://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js" type="text/javascript" type="text/javascript"></script>
+          <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous">
+          </script>
         <script src="js/script.js" type="text/javascript"></script>
     </body>
 </html>

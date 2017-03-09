@@ -1,0 +1,56 @@
+body {
+  background: rgb(136,191,232);
+  background: -moz-linear-gradient(-45deg,  rgba(136,191,232,1) 0%, rgba(117,148,234,1) 100%);
+  background: -webkit-linear-gradient(-45deg,  rgba(136,191,232,1) 0%,rgba(117,148,234,1) 100%);
+  background: linear-gradient(135deg,  rgba(136,191,232,1) 0%,rgba(117,148,234,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88bfe8', endColorstr='#7594ea',GradientType=1 );
+}
+
+/* BOARD */
+
+#chessboard {
+  background-color: white;
+  position:absolute;
+  width:600px;
+  height:600px;
+  left:50%;
+  top:50%;
+  margin-left:-300px;
+  margin-top:-300px;
+  border: 5px solid black;
+
+  -webkit-box-shadow: 10px 10px 75px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 75px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 75px 0px rgba(0,0,0,0.75);
+}
+
+#chessboard > div {
+  width: 75px;
+  height: 75px;
+  float: left;
+}
+.cell-w { background-color: white; }
+.cell-b { background-color: gray; }
+
+/* PIECES */
+.piece-b,
+.piece-w {
+  font-size: 70px;
+  vertical-align: middle;
+  line-height: 75px;
+  text-align: center;
+}
+
+.piece-b.tower:before {content:"♜";}
+.piece-b.knight:before {content:"♞";}
+.piece-b.bishop:before {content:"♝";}
+.piece-b.queen:before {content:"♛";}
+.piece-b.king:before {content:"♚";}
+.piece-b.pawn:before {content:"♟";}
+
+.piece-w.tower:before {content:"♖";}
+.piece-w.knight:before {content:"♘";}
+.piece-w.bishop:before {content:"♗";}
+.piece-w.queen:before {content:"♕";}
+.piece-w.king:before {content:"♔";}
+.piece-w.pawn:before {content:"♙";}

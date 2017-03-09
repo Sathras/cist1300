@@ -1,10 +1,18 @@
+console.log("45"+"45");
+console.log(45 + 45);
+
 // this function reads the value of a specific input field
-function getNumber(number){
-  return parseInt(document.getElementById("n"+number).value);
+function getNumber(id){
+  return parseInt(document.getElementById("n"+id).value);
 }
 
 // this function checks if number is valid (returns true) or not (returns false)
 function isNumber(number){
+  // if(isNaN(number)){
+  //   return false;
+  // } else {
+  //   return true;
+  // }
   return (isNaN(number)) ? false : true;
 }
 
