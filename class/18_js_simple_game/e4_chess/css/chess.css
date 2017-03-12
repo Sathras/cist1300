@@ -28,29 +28,36 @@ body {
   width: 75px;
   height: 75px;
   float: left;
-}
-.cell-w { background-color: white; }
-.cell-b { background-color: gray; }
-
-/* PIECES */
-.piece-b,
-.piece-w {
   font-size: 70px;
   vertical-align: middle;
   line-height: 75px;
   text-align: center;
+  background-color: white;
+  cursor: pointer;
 }
 
-.piece-b.tower:before {content:"♜";}
-.piece-b.knight:before {content:"♞";}
-.piece-b.bishop:before {content:"♝";}
-.piece-b.queen:before {content:"♛";}
-.piece-b.king:before {content:"♚";}
-.piece-b.pawn:before {content:"♟";}
+#chessboard > div.active { color: gold;}
 
-.piece-w.tower:before {content:"♖";}
-.piece-w.knight:before {content:"♘";}
-.piece-w.bishop:before {content:"♗";}
-.piece-w.queen:before {content:"♕";}
-.piece-w.king:before {content:"♔";}
-.piece-w.pawn:before {content:"♙";}
+#chessboard > div[data-y="8"]:nth-of-type(odd),
+#chessboard > div[data-y="7"]:nth-of-type(even),
+#chessboard > div[data-y="6"]:nth-of-type(odd),
+#chessboard > div[data-y="5"]:nth-of-type(even),
+#chessboard > div[data-y="4"]:nth-of-type(odd),
+#chessboard > div[data-y="3"]:nth-of-type(even),
+#chessboard > div[data-y="2"]:nth-of-type(odd),
+#chessboard > div[data-y="1"]:nth-of-type(even)
+{ background-color: gray; }
+
+/* PIECES */
+#chessboard > div[data-piece="bt"]:before {content:"♜";}
+#chessboard > div[data-piece="bh"]:before {content:"♞";}
+#chessboard > div[data-piece="bb"]:before {content:"♝";}
+#chessboard > div[data-piece="bq"]:before {content:"♛";}
+#chessboard > div[data-piece="bk"]:before {content:"♚";}
+#chessboard > div[data-piece="bp"]:before {content:"♟";}
+#chessboard > div[data-piece="wt"]:before {content:"♖";}
+#chessboard > div[data-piece="wh"]:before {content:"♘";}
+#chessboard > div[data-piece="wb"]:before {content:"♗";}
+#chessboard > div[data-piece="wq"]:before {content:"♕";}
+#chessboard > div[data-piece="wk"]:before {content:"♔";}
+#chessboard > div[data-piece="wp"]:before {content:"♙";}
