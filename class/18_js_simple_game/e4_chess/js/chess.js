@@ -3,108 +3,147 @@ var Chess = {
   // global variables
   wPlayer : true, // current player is white (true), otherwise black (false)
   sPiece  : null, // selected piece
-  options : [],   // possible movement options
 
+  // main action (this happens when a user click somewhere on the board)
   action : function(elm){
 
-    var field = this.getField(elm);
+    // get element type
+    var pType = this.getPiece(elm);
 
-    // if no piece has been selected
-    if(!this.sPiece){
+    // if no piece has been selected and current piece is friendly
+    if(!this.sPiece && pType === 3){
+      // activation
+      this.sPiece = elm;
+      this.sPiece.addClass('active');
+    }
 
-      // check if the currently selected field contains a friendly piece
-      if(!this.isEmpty(field) && !this.isEnemy(field)){
+    else if(this.sPiece){
+      pos0 = this.getPosition(this.sPiece);
+      pos1 = this.getPosition(elm);
 
-        // select and activate it
-        this.sPiece = elm;
-        this.sPiece.addClass('active');
+      // if same piece was clicked again, deactivate it
+      if(pos0.x === pos1.x && pos0.y === pos1.y){
+        this.sPiece.removeClass('active');
+        this.sPiece = null;
+        return;
+      }
 
-        // create list with valid movement options
-        this.options = this.checkMovements(this.wPlayer);
+      // not empty or an ememy piece (no king) --> do nothing
+      if(pType > 1) return;
+
+      // get possible movement options and validate them
+      if(this.checkMovements(elm)){
+
+        elm
+          .data('piece', this.sPiece.data('piece'))
+          .attr('data-piece', this.sPiece.data('piece'));
+        this.sPiece
+          .removeClass('active')
+          .removeData('piece')
+          .removeAttr('data-piece');
+        this.sPiece = null;
+
+        // convert pawn to queen if reaching end of line
+        if(elm.data('piece') === 'wp' && elm.data('y') == 1)
+          elm.data('piece', 'wq').attr('data-piece', 'wq');
+
+        if(elm.data('piece') === 'bp' && elm.data('y') == 8)
+          elm.data('piece', 'bq').attr('data-piece', 'bq');
+
+        // switch player
+        this.wPlayer = !this.wPlayer;
       }
     }
-
-    // selected piece is the same that is already selected
-    else if (this.sPiece == elm) {
-      // deselect it
-      this.sPiece.removeClass('active');
-      this.sPiece = false;
-      this.options = [];
-    }
-
-    // movement attempt - check list if target position is inside list
-    else if ($.inArray(''+pos.x+pos.y, this.options) !== -1){
-      // copy piece into new position
-      this.selectPiece(pos)
-        .data('piece', this.sPiece.data('piece'))
-        .attr('data-piece', this.sPiece.data('piece'));
-
-      // remove piece from old position and deselect active piece
-      this.sPiece.removeClass('active').removeData('piece').removeAttr('data-piece');
-      this.sPiece = false;
-
-      // switch player
-      this.wPlayer = !this.wPlayer;
-      this.options = [];
-    }
   },
 
-  // add a field to the list of possible movements
-  addOption : function (field){
-    this.options.push('' + field.x + field.y);
-  },
+  // first creates a list of possible movement options
+  // returns true, if to is in option list (movement possible), otherwise false
+  checkMovements : function (to){
 
-  // updates a list of all possible movements for selected piece
-  checkMovements : function (){
-    // get piece type
-    var field = this.getPos(this.sPiece);
-    switch (this.getPiece(field).charAt(1)){
-      case 't' : this.checkTower (field); break;
-      case 'h' : this.checkHorse (field); break;
-      case 'b' : this.checkBishop(field); break;
-      case 'q' : this.checkQueen (field); break;
-      case 'k' : this.checkKing  (field); break;
-      case 'p' : this.checkPawn  (field);
+    // get all possible movement options and store in mList
+    var mList;
+    switch (this.sPiece.data('piece').charAt(1)){
+      case 't' : mList = this.check_T(); break;
+      case 'h' : mList = this.check_H(); break;
+      case 'b' : mList = this.check_B(); break;
+      case 'q' : mList = this.check_Q(); break;
+      case 'k' : mList = this.check_K(); break;
+      case 'p' : mList = this.check_P();
     }
+
+    // get target position
+    var tPos = this.getPosition(to);
+
+    // check if movement matches and if so return true, otherwise false
+    if($.inArray(''+tPos.x+tPos.y, mList) !== -1) return true;
+    return false;
   },
 
-  checkPawn : function (field){
+  // checks pawn movement
+  check_P : function (){
 
-    var target = {
-      x : field.x,
-      y : (this.wPlayer) ? field.y-1 : field.y+1
-    };
+    var mList = [];
+    var sPos = this.getPosition(this.sPiece);
+    var tPos = {x: sPos.x, y:sPos.y};
+    var nextEmpty = false;
 
-    // check straight movement
-    if(this.canGo(target)) this.options.push(target);
+    // check single straight
+    tPos.y = (this.wPlayer) ? tPos.y-1 : tPos.y+1;
+    if(this.getPiece(tPos) === 0){
+      mList.push(''+tPos.x+tPos.y);
+      nextEmpty = true;
+    }
 
     // check sideway movements (only if there is a enemy piece)
-    target.x--;
-    if(this.isEnemy(target) && this.canGo(target)) this.addOption(target);
-    target.x += 2;
-    if(this.isEnemy(target) && this.canGo(target)) this.addOption(target);
+    tPos.x --;   if(this.getPiece(tPos) === 1) mList.push(''+tPos.x+tPos.y);
+    tPos.x += 2; if(this.getPiece(tPos) === 1) mList.push(''+tPos.x+tPos.y);
 
     // TODO: special crosssteal move
 
     // check double movement in first turn
-    // pawn must not have been moved and
-    // next field must be empty and
-    // 2 fields ahead must be empty
-    target.x--;
-    if((this.wPlayer && field.y === 7) || (!this.wPlayer && field.y === 2) &&
-        isEmpty(target) &&
-        isEmpty({x : target.x, y : (this.wPlayer) ? target.y-1 : target.y+1})
-    ) this.addOption(target);
+    tPos.x --; tPos.y = (this.wPlayer) ? tPos.y-1 : tPos.y+1;
+
+    if((this.wPlayer && sPos.y === 7) || (!this.wPlayer && sPos.y === 2) &&
+        this.getPiece(tPos) === 0 && nextEmpty) mList.push(''+tPos.x+tPos.y);
+
+    return mList;
   },
 
   // returns position of field, expects a jQuery Selector
-  getField : function (elm){
-    return [elm.data('x'),elm.data('y')];
+  getPosition : function (elm){
+    return {
+      x: elm.data('x'),
+      y: elm.data('y')
+    };
   },
 
-  // returns position of field, expects a jQuery Selector
-  getPiece : function (field){
-    return this.selectPiece(field).data('piece');
+  // checks if there is a piece on the given field, returns
+  // 0 - no piece
+  // 1 - enemy piece (except king)
+  // 2 - enemy piece (king)
+  // 3 - friendly piece
+
+  // parameter field can be a selector or array
+
+  getPiece : function(field) {
+
+    var piece = (typeof field.x !== 'undefined')
+      ? $('#chessboard div[data-x="'+field.x+'"][data-y="'+field.y+'"]').data('piece')
+      : field.data('piece');
+
+    // empty field
+    if(!piece) return 0;
+
+    // enemy king
+    else if((this.wPlayer && piece === 'bk')||(!this.wPlayer && piece === 'wk'))
+      return 2;
+
+    // enemy (not a king)
+    else if (( this.wPlayer && piece.charAt(0) === 'b')
+          || (!this.wPlayer && piece.charAt(0) === 'w')) return 1;
+
+    // otherwise it must be a friendly piece
+    else return 3;
   },
 
   // add correct pieces at correct positions
@@ -132,47 +171,6 @@ var Chess = {
     $('#chessboard div:nth-child(63)').data('piece','wh').attr('data-piece','wh');
     $('#chessboard div:nth-child(64)').data('piece','wt').attr('data-piece','wt');
   },
-
-  isEmpty : function (field){
-    if(!this.getElm(this.getPiece(field))) return true;
-    return false;
-  },
-
-  isEnemy : function (field){
-    var piece = this.getElm(this.getPiece(field));
-    if(piece && ( this.wPlayer && piece.charAt(0) === 'b')
-             || (!this.wPlayer && piece.charAt(0) === 'w'))
-      return true;
-    return false;
-  },
-
-  getElm : function (field){
-    return $('#chessboard > div[data-x="'+field[0]+'"][data-y="'+field[1]+'"]');
-  },
-
-  // if target position is in game board and has enemy piece (except king)
-  // or is empty return true, otherwise false
-  canGo : function (field){
-
-    // check boundaries
-    if(field.x > 8 || field.x < 1 || field.y > 8 || field.y < 1) return false;
-
-    var piece = this.getElm(field).data('piece');
-
-    // empty field always true
-    if(!piece) return true;
-
-    // own pieces always false
-    if((this.wPlayer && piece.charAt(0) === 'w') ||
-      (!this.wPlayer && piece.charAt(0) === 'b')) return false;
-
-    // enemy king always false
-    if((this.wPlayer && piece === 'wk') || (!this.wPlayer && piece === 'bk'))
-    return false;
-
-    // otherwise true (normal enemy piece)
-    return true;
-  }
 };
 
 $(document).ready(function (){
