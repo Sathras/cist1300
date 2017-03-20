@@ -1,19 +1,43 @@
 var TODO = {
 
+  data : [],
+
+  refresh : function(){
+    $('ul').html('');
+
+    for (var i = 0; i < this.data.length; i++) {
+      $('ul').append(
+        '<li class="list-group-item">'+
+          '<span>'+this.data[i]+'</span>'+
+          '<button class="btn btn-success btn-xs pull-right">'+
+            '<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>'+
+          '</button>'+
+        '</li>')
+    }
+  }
+
 }
 
-$(document).ready({
-  // all kind of events (e.g. click) should go here and trigger functions in TODO
+$(document).ready(function (){
 
+  var data = [];
+
+  // if(typeof Cookies.get('todos') === 'undefined')
+
+  // all kind of events (e.g. click) should go here and trigger functions in TODO
+  $('form').submit(function (event){
+    event.preventDefault();
+    TODO.data.push($('input').val());
+    $('input').val('');
+    TODO.refresh();
+  });
+
+  $('.input-group-addon').click(function(){
+    $('form').submit();
+  });
+
+  $('.btn-success').on('click', function(){
+    $(this).parent().addClass('done');
+  });
 });
 
-// Cookies.set('name', 'value', { expires: 7 });
-// Cookies.set('test', 'value');
-
-// var var1 = Cookies.get('name'); // => 'value'
-// var var2 = Cookies.get('nothing'); // => undefined
-
-// Cookies.set('name', 'value2', { expires: 7 });
-// var1 = Cookies.get('name'); // => 'value'
-
-// console.log(var1, var2)

@@ -1,20 +1,23 @@
 <h3 id='js-agmt'>JavaScript / jQuery Assignment</h3>
 <p style='font-weight:bold;'>
     <span style='color:#AD0000'>Submission Deadline:</span> 03/30 10:00 AM<br>
-    <span style='color:#1700AD'>Maximum Score:</span> 50<br>
+    <span style='color:#1700AD'>Maximum Score:</span> 50 (+20 Bonus)<br>
     Submission via: <span style='font-weight:normal;'>Cloud9</span>
 </p>
 
-<p>The Assignment is to program a small app using jQuery. Given a html file including a Bootstrap table, add a JavaScript file, that allows you to:</p>
+<p>
+  <a type="button" href='../downloads/assignments/js_assignment/index.html' target='_blank' class="btn btn-info pull-right"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> Template</a>
+  The Assignment is to program a small app using jQuery that allows you to filter a picture gallery based on data-attributes. Please use the source files found under <strong>/downloads/assignments/js_assignment/index.html</strong></p>
 <ul>
-  <li>sort tabled by each column (asc and dsc)</li>
-  <li>hide/show individual columns</li>
-  <li>reset the table to the default view</li>
+  <li>Don't alter the html file. Feel free however to alter modify any CSS / JS files.</li>
+  <li>Feel free to use JQuery and/or Bootstrap, however don't use any other external libraries or resources.</li>
+  <li>See grading rubric for actual tasks.</li>
+  <li>Ensure you save your project in your private repository, not the cist1300-class...</li>
 </ul>
-<p>You wont have to alter the existing html file to enable all the functionality described above.</p>
 
 <div class="alert alert-info" role="alert">
-  <p><strong>Advice:</strong> You might first want to get the data already present in the table and add it to a JavaScript object that can then be sorted and filtered.</p>
+  <p>Also check out this resources: It is an awesome wrap-up how to write and how
+  to not write jQuery: <a href="https://www.smashingmagazine.com/2008/09/jquery-examples-and-best-practices/" target="_blank">https://www.smashingmagazine.com/2008/09/jquery-examples-and-best-practices/</a></p>
 </div>
 
 <table class='table table-condensed table-striped'>
@@ -26,24 +29,25 @@
   </thead>
   <tbody>
     <tr>
-      <td>All Functionality working as expected without altering the HTML file.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>Reset Button working</td>
+      <td>Clicking on the "Reset" button should put the gallery back into its original state.</td>
       <td>10</td>
     </tr>
     <tr>
-      <td>Showing / hiding columns works</td>
-      <td>10</td>
+      <td>Clicking on the "Enlarge" button should enlarge all pictures by 50% in both width and height. Clicking it again should restore the original size. Also indicate if enlargment is active by adding/removing a class "active" to the button</td>
+      <td>20</td>
     </tr>
     <tr>
-      <td>Sorting of individual columns works</td>
-      <td>25</td>
+      <td>Clicking on the "Filter 1" button should hide all pictures that have their "data-filter" attribute set to 1. Clicking it again should show them again. Also indicate if the filter is on by adding/removing a class "active" at the button.</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td><strong>Bonus:</strong> Clicking on Filter 2 button should blur and grayscale all
+      pictures that have their "data-filter" attribute set to something different than 2. Clicking it again reverses the process. Also indicate if the filter is on by adding/removing a class "active" at the button.</td>
+      <td>20</td>
     </tr>
     <tr>
       <td><strong>Total</strong></td>
-      <td><strong>50</strong></td>
+      <td><strong>50 (+20)</strong></td>
     </tr>
   </tbody>
 </table>
