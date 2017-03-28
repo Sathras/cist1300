@@ -26,7 +26,7 @@ var TODO = {
         '<li class="list-group-item" data-id="'+i+'">'+
           '<span>'+this.data[i]+'</span>'+
           '<button class="btn btn-danger btn-xs pull-right">X</button>'+
-        '</li>')
+        '</li>');
     }
   },
 
@@ -39,8 +39,9 @@ var TODO = {
     this.setData();
     this.refresh();
   }
-}
+};
 
+// this gets executed once the entire page is loaded
 $(document).ready(function (){
 
   TODO.getData();
