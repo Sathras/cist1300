@@ -955,16 +955,58 @@
           <a href="http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/" target="_blank" class="btn btn-default btn-lg">Link to Tutorial</a>
           <ul>
             <li>We follow the tutorial step by step and try to understand what is going only</li>
-            <li>This time try to use absolute links to bind in your images:<br><code>
-                Background: https://raw.githubusercontent.com/lostdecade/simple_canvas_game/master/images/background.png<br>
-                Pumpkin: http://i2.wp.com/www.speedycppshq.com/wp-content/uploads/2016/09/cropped-Halloween_2013_Emoticons_Pumpkin.png?fit=32%2C32<br>
-                hero1: https://hydra-media.cursecdn.com/dota2.gamepedia.com/2/27/Crystal_Maiden_icon.png<br>
-                hero2: http://thumb.vpgamecdn.com/file/npc_dota_hero_dragon_knight_sm.png</code></li>
-            <li><strong>CHALLENGE:</strong>expand the game into a 2 player version, where the other player can use WSAD to control his figure. Have 2 scores displayed, one for each player</li>
-            <li><strong>CHALLENGE:</strong>there should be always 3 pumpkins to catch (can be catched by anyone)</li>
-            <li><strong>CHALLENGE:</strong>after 2 minutes stop the game and have the player with a higher score win!</li>
           </ul>
         </li>
+      </ul>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Lecture 25 -->
+<div class="modal fade" id="prog25" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title">Lecture 25 - GameDev Studio</h4>
+    </div>
+    <div class="modal-body">
+      <h4>Agenda</h4>
+      <ul>
+        <li>A little more about canvas and how to draw on it</li>
+        <li>Recap Canvas Game Example</li>
+        <li>
+          <a type="button" href='#' target='_blank' class="btn btn-xs btn-info disabled pull-right"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> Finished Example</a>
+          <strong>Group Exercise - A GameDev Studio in Action</strong>
+          <a href="http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/" target="_blank" class="btn btn-success btn-sm">Link to Tutorial</a>
+          <ul>
+            <li>Similarily to a real software company, we have to join forces to produce an end product.</li>
+            <li>
+              Groups of 2 students each will be responsible for developing specific modules of the game:
+              <ul>
+                <li><strong>Border Group (BG)</strong><span class="label label-success pull-right">Easy</span><br>
+                  The job is to ensure the hero cannot go outside of the canvas.</li>
+                <li><strong>Graphics Department (GD)</strong><span class="label label-success pull-right">Easy</span><br>
+                  Your job is to improve the background graphic of the game so it fits a larger screen with dynamic size. Replace the backgroung with a grass tile graphic that can be repeated without noticing a transition. Also add a fence that can be indefinately expanded around the edges of the canvas.</li>
+                <li><strong>Multiplayer Group (MP)</strong><span class="label label-warning pull-right">Average</span><br>
+                  Your task is to add a second player (with different graphic) that can move with w,s,a,d keys and a score for this player. The graphic for the second hero is already in the img folder. Both heroes should be able to competitively hunt the same treasure.</li>
+                <li><strong>Sizing Group (SG)</strong><span class="label label-warning pull-right">Average</span><br>
+                  Your job is to make the canvas as large as the screen allows. This should also affect the placement of hero and monster upon reset. Also wenn resizing the window, update the new values with JavaScript (HINT: event: $(window).resize(); ).</li>
+                <li><strong>Obstacles Group (OG)</strong><span class="label label-danger pull-right">Difficult</span><br>
+                  Create a few, rectangle shaped obstacles on the map. Give it some graphics (e.g. rocks) and ensure that the player cannot move through them.</li>
+                <li><strong>Artificial Intelligence Group (AI)</strong><span class="label label-danger pull-right">Very Difficult</span><br>
+                  Add a monster and make it mobile. The graphic is already in the img folder. Ensure it is randomly moveing around but when it gets in close proximity to the player it should start chasing the player. give it a slightly slower speed so the player can get away.</li>
+                <li>See your groups here: <a href="https://docs.google.com/spreadsheets/d/1sdnnJrRsW7OdPUQhEg6VSgRJRBxHOVXKxbnsp1HfUPI/edit?usp=sharing" target="_blank" class='btn btn-info'>Groups</a></li>
+              </ul>
+          </ul>
+        </li>
+        <li>Hopefully some groups will be successful and we can integrate the code into the main function. <span class='text-alert'>Try to use as many functions, as possible because they can easily be reused and integrated by other teams.</span></li>
       </ul>
     </div>
 
